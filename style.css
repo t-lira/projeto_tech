@@ -8,7 +8,9 @@
 .text-color{
   color: var(--dark-green);
 }
-
+.btn-color{
+  
+}
 .footer{
 background-color: var(--light-gray);
 }

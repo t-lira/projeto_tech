@@ -5,10 +5,15 @@
 }
 
 :root{
-  --dark-green:#00747C;
-  --light-green:#00BBC9;
+  --dark-green:#00393D;
+  --light-green:#00747C;
+
   --light-gray:#CACACA;
   --dark-gray:#878787;
   --black:#3a3939;
   --white:#fff;
+}
+
+.btn-color{
+  background-color: rgb(177, 177, 7);
 }
