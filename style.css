@@ -1,0 +1,14 @@
+.banner-top{
+  background-image: url('assets/image/pexels-photo-406014.jpeg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: calc(100vh - 150px);
+}
+.text-color{
+  color: var(--dark-green);
+}
+
+.footer{
+background-color: var(--light-gray);
+}
