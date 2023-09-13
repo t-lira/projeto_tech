@@ -5,12 +5,16 @@
   background-size: cover;
   height: calc(100vh - 150px);
 }
+
 .text-color{
-  color: var(--dark-green);
+  color: var(--blue);
 }
-.btn-color{
-  
+
+.bg-color{
+  background-color: var(--blue);
 }
+
 .footer{
 background-color: var(--light-gray);
 }
+
