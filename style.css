@@ -1,20 +1,75 @@
+/* font-family: 'Niconne', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+
+
 .banner-top{
   background-image: url('assets/image/pexels-photo-406014.jpeg');
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position:bottom;
   background-size: cover;
   height: calc(100vh - 150px);
+}
+
+.banner-top-shop{
+  background-image: url('assets/image/brinquedos-coloridos.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 50vh;
+}
+
+.banner-form{
+  background-image: url('assets/image/objetos-coloridos.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 50vh;
+}
+
+.img-contact-form{
+  background-image: url('assets/image/img-dog.jpeg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.bg-location{
+  background-image: url('assets/image/png-image-pets.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
 }
 
 .text-color{
   color: var(--blue);
 }
 
+.font-alternative{
+  font-family: 'Niconne', cursive;
+}
+
 .bg-color{
   background-color: var(--blue);
 }
 
+.iframe-location{
+  min-width: 100%;
+  min-height: 30rem;
+}
+
 .footer{
 background-color: var(--light-gray);
+}
+
+
+
+
+.about-me{
+  background-color: #c5c3c3;
+}
+
+.bg-color{
+  background-color: #343434;
+  color: white;
 }
 
