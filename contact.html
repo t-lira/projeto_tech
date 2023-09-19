@@ -15,56 +15,75 @@
 
 <body>    
   <!--Start header-->    
-  <header class="header bg-light ">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
+  <header class="header bg-color">
+    <nav class="navbar navbar-expand-lg navbar-dark static-top bg-header">
+      <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img src="assets/image/icons/logo_icon.png" alt="logo" width="150rem">
+          <img src="assets/image/icons/logo_icon.png" alt="logo" height="36">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="index.html" class="nav-link link-dark">Home</a>
+              <a class="nav-link  fs-5 link-light" href="index.html">Home</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5 link-light" href="about.html">Quem Somos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link  fs-5 link-light" href="services.html">Serviços</a>
+            </li>
+
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Quem Somos
+              <a class="nav-link dropdown-toggle fs-5 link-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contato
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="about.html">Sobre nós</a></li>
-                <li><a class="dropdown-item" href="about.html">Localização</a></li>
-                <li><a class="dropdown-item" href="about.html">Serviços</a></li>
+                <li>
+                  <a class="dropdown-item" href="contact.html">Entre em Contato</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="work.html">Trabalhe Conosco</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="contact.html">Localização</a>
+                </li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Trabalhe conosco</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a href="shop.html" class="nav-link link-dark">Loja Online</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link link-dark">Contato</a>
-            </li>
+
+            <form class="d-flex ms-5">
+              <button class="btn btn-light" type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+                <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+              </button>
+            </form>
           </ul>
         </div>
-      </div>
+      </div>   
     </nav>
-
   </header>
-  <!--End header-->  
-  <main class="main background-color">
-    <section class="banner-form">
+<!--Start Main-->
+  <main class="main">
+    <!--Star section banner-->
+    <section class="d-none d-lg-block banner-form">
       <div class="container-fluid">
         <div class="row">
-                <!--Image in CSS-->
-          <!--<a href="https://br.freepik.com/psd-gratuitas/retrato-de-grupo-de-filhotes-adoraveis_3730286.htm#query=petshop&position=16&from_view=search&track=sph">Imagem de rawpixel.com</a> no Freepik-->
+          <!--Image in CSS-->
         </div>
       </div>
     </section>
 
-    <section class="contact-form mt-5 mb-5">
+    <!--Start section form contact-->
+    <section class="contact-form  pt-5 pb-5 p-lg-5">
       <div class="container-fluid">
         <div class="row">            
           <h3 class="mb-3  text-color text-uppercase">
@@ -72,69 +91,72 @@
           </h3> 
           <div class="col-12 ">
 
-            <form action="fist-name" method="post" class="form-control">
+            <form action="" method="post" class="">
 
-              <div class="mb-1">
+              <div class="mb-3">
                 <label for="" class="form-label">Nome:</label>
                 <input type="text" placeholder="Nome*" class="form-control" name="fist-name" id="fist-name" required>
               </div>
 
-              <div class="mb-1">
-                <label for="email-contact" class="form-label">E-mail:</label>
-                <input type="email" placeholder="E-mail*" class="form-control" name="email-contact" id="email-contact" required> 
+              <div class="row mb-3">
+                <div class="col">
+                  <label for="email-contact" class="form-label">E-mail:</label>
+                  <input type="email" placeholder="E-mail*" class="form-control" name="email-contact" id="email-contact" required> 
+                </div>
+  
+                <div class="col">
+                  <label for="telephone-contact" class="form-label">Telefone:</label>
+                  <input type="number" placeholder="Telefone com DDD*" class="form-control" name="telephone-contact" id="telephone-contact" required>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col">
+                  <label for="city" class="form-label">Estado:</label>
+                  <input class="form-control" list="datalistOptions" name="city" id="city" placeholder="Estado*">
+                  <datalist id="datalistOptions">
+                    <option value="Acre" id="">
+                    <option value="Alagoas" id="">
+                    <option value="Amapá" id="">
+                    <option value="Amazonas" id="">
+                    <option value="Bahia" id="">
+                    <option value="Ceará" id="">
+                    <option value="Distrito Federal" id="">
+                    <option value="Espírito Santo" id="">
+                    <option value="Goiás" id="">
+                    <option value="Maranhão" id="">
+                    <option value="Mato Grosso" id="">
+                    <option value="Mato Grosso do Sul" id="">
+                    <option value="Minas Gerais" id="">
+                    <option value="Pará" id="">
+                    <option value="Paraíba" id="">
+                    <option value="Paraná" id="">
+                    <option value="Pernambuco" id="">
+                    <option value="Piauí" id="">
+                    <option value="Rio de Janeiro" id="">
+                    <option value="Rio Grande do Norte" id="">
+                    <option value="Rio Grande do Sul" id="">
+                    <option value="Rondônia" id="">
+                    <option value="Roraima" id="">
+                    <option value="Santa Catarina" id="">
+                    <option value="São Paulo" id="SP">
+                    <option value="Sergipe" id="">
+                    <option value="Maranhão" id="Tocantins">
+                  </datalist>
+                </div>
+  
+                <div class="col">
+                  <label for="cep" class="form-label ">CEP:</label>
+                  <input type="text" placeholder="CEP*" class="form-control" name="cep" id="cep" required>
+                </div>
               </div>
 
-              <div class="mb-1">
-                <label for="telephone-contact" class="form-label">Telefone:</label>
-                <input type="number" placeholder="Telefone com DDD*" class="form-control" name="telephone-contact" id="telephone-contact" required>
-              </div>
-
-              <div class="mb-1">
-                <label for="city" class="form-label">Estado:</label>
-                <input class="form-control" list="datalistOptions" name="city" id="city" placeholder="Qual seu estado?*">
-                <datalist id="datalistOptions">
-                  <option value="Acre" id="">
-                  <option value="Alagoas" id="">
-                  <option value="Amapá" id="">
-                  <option value="Amazonas" id="">
-                  <option value="Bahia" id="">
-                  <option value="Ceará" id="">
-                  <option value="Distrito Federal" id="">
-                  <option value="Espírito Santo" id="">
-                  <option value="Goiás" id="">
-                  <option value="Maranhão" id="">
-                  <option value="Mato Grosso" id="">
-                  <option value="Mato Grosso do Sul" id="">
-                  <option value="Minas Gerais" id="">
-                  <option value="Pará" id="">
-                  <option value="Paraíba" id="">
-                  <option value="Paraná" id="">
-                  <option value="Pernambuco" id="">
-                  <option value="Piauí" id="">
-                  <option value="Rio de Janeiro" id="">
-                  <option value="Rio Grande do Norte" id="">
-                  <option value="Rio Grande do Sul" id="">
-                  <option value="Rondônia" id="">
-                  <option value="Roraima" id="">
-                  <option value="Santa Catarina" id="">
-                  <option value="São Paulo" id="SP">
-                  <option value="Sergipe" id="">
-                  <option value="Maranhão" id="Tocantins">
-                </datalist>
-              </div>
-
-              <div class="mb-1">
-                <label for="cep" class="form-label ">CEP:</label>
-                <input type="text" placeholder="Qual o seu CEP?*" class="form-control" name="cep" id="cep" required>
-              </div>
-
-              <div class="mb-1">
+              <div class="mb-3">
                 <label for="message" class="form-label">Mensagem:</label>
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="O que você precisa?" class="form-control" required></textarea>
               </div>
 
               <div class="mt-3 float-end">
-                <button type="submit" value="submit" class="btn btn-primary px-5" id="" onclick="formcontact()">Enviar</button>
+                <button type="submit" value="submit" class="btn btn-primary btn-lg px-5 mt-3" id="" onclick="formcontact()">Enviar</button>
               </div>
             </form>
           </div>
@@ -211,8 +233,9 @@
     </section>
     <!--End section-resister-->
   </main>
+
   <!--Start Footer-->
-  <footer class="footer pt-1">
+  <footer class="footer pt-1 bg-light">
     <div class="container-fluid">
       <div class="row align-items-start">
         <div class="col-md-4 col-lg-3 mt-2">
@@ -286,7 +309,7 @@
       </div>
     </div>
   </footer>
-  <!--End Footer-->
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
 

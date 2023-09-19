@@ -1,16 +1,14 @@
-/* font-family: 'Niconne', cursive; */
 @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
-.bg-header{
-  background-color: #2e5c5f;
-}
 
+/*header icon*/
 .icon-header-profile{
   width: 3rem;
 }
 
+/*banners*/
 .banner-top{
   background-image: url('assets/image/pexels-photo-406014.jpeg');
   background-repeat: no-repeat;
@@ -19,7 +17,7 @@
   height: calc(100vh - 150px);
 }
 
-.banner-top-shop{
+.banner-top-form{
   background-image: url('assets/image/brinquedos-coloridos.jpg');
   background-repeat: no-repeat;
   background-position: bottom;
@@ -42,31 +40,57 @@
   background-size: cover; 
 }
 
+/*text color */
 .text-color{
-  color: #16747a;
+  color: #6390C7;
 }
 
+/*font-family*/
 .font-alternative{
   font-family: 'Niconne', cursive;
 }
 
+/*bg color */
+
 .bg-color{
-  background-color: #2e5c5f;
+  background-color: #6C65B9;
 }
 
+/*buttons*/
+.btn-width{
+  width: 100%;
+}
+
+/*iframe map*/
 .iframe-location{
   min-width: 100%;
   min-height: 30rem;
 }
 
-.footer{
-background-color: var(--light-gray);
-}
 
-.background-color{
-  background-color: #dcdaeb;
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*style page about me*/
@@ -90,7 +114,6 @@ background-color: #d8dde0;
 .color-text-variety{
   color: #1b127c;
 }
-
 
 
 .font-text-variety{

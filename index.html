@@ -15,46 +15,69 @@
 
 <body>    
   <!--Start header-->    
-  <header class="header ">
+  <header class="header bg-color">
     <nav class="navbar navbar-expand-lg navbar-dark static-top bg-header">
       <div class="container">
-        <a class="navbar-brand" href="about-me.html">
+        <a class="navbar-brand" href="index.html">
           <img src="assets/image/icons/logo_icon.png" alt="logo" height="36">
         </a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link  fs-5" href="about-me.html">Home</a>
+              <a class="nav-link  fs-5 link-light" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-5" href="#about-me">Serviços</a>
+              <a class="nav-link fs-5 link-light" href="about.html">Quem Somos</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link  fs-5" href="#projects">Loja online</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link  fs-5" href="#projects">Localização</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link  fs-5" href="#contact">Contato</a>
+              <a class="nav-link  fs-5 link-light" href="services.html">Serviços</a>
             </li>
 
-            <a href="about-me.html">
-              <img src="assets/image/about-me/profile-pic.png" alt="icone de contato" title="Meu perfil" class="icon-header-profile">
-            </a>
-            <!--<a href="https://www.flaticon.com/br/icones-gratis/menina" title="menina ícones">Menina ícones criados por Freepik - Flaticon</a>-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle fs-5 link-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contato
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="contact.html">Entre em Contato</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="work.html">Trabalhe Conosco</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="contact.html">Localização</a>
+                </li>
+                <li><hr class="dropdown-divider"></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+
+            <form class="d-flex ms-5">
+              <button class="btn btn-light" type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+                <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+              </button>
+            </form>
+
+
+
           </ul>
         </div>
-      </div>
+      </div>   
     </nav>
   </header>
-  <!--End header  -->  
 
-  <main class="background-color">
+  <main class="">
  
     <section class="banner-top">   
       <!--Image in CSS-->
@@ -108,78 +131,380 @@
         </div>
       </div>
     </section>
+    <section class="py-5">
+      <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 
-    <section class="about">
-      <div class="container-fluid">
-        <div class="row align-items-center">
+          <div class="col-12 mb-5">
+            <div class="card h-100">
+                <!-- Product image-->
+                <img class="card-img-top" src="assets/image/shop/image_1.png" alt="Ração Pedigree Para Cães Adultos Raças Pequenas Carne e Vegetais 15kg" />
+                <!-- Product details-->
+                <div class="card-body p-4">
+                  <div class="">
+                    <!-- Product name-->
+                    <h5 class="fw-bolder">
+                      Ração Pedigree Para Cães Adultos Raças Pequenas Carne e Vegetais 15kg
+                    </h5>
+                    <p class="card-text">
+                      <span class="text-decoration-line-through text-secondary">De: R$  200,99</span> 
+                      <br>
+                      <span class="text-color fw-bold">Por: R$ 183,30 (pix)</span>  
+                      <br>
+                      <span class="">R$ 192,95(cartão ou boleto)</span>
+                    </p>
+                  </div>
+                </div>
+                <!-- Product actions-->
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center ">
+                      <a class="btn btn-outline-dark btn-width mb-3" href="#">Comprar</a>
+                      <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-          <div class="col-lg-6 ">
-            <img src="assets/image/pexels-photo-6131150.jpeg" alt="Cachorro tomando banho" class="img-fluid rounded">
+        <div class="col-12 mb-5">
+          <div class="card h-100">
+              <!-- Product image-->
+              <img class="card-img-top" src="assets/image/shop/image_11.webp" alt="Ração Úmida Pedigree Sachê Cães Adultos Raças Pequenas Carne ao Molho 100g" />
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder">
+                    Ração Úmida Pedigree Sachê Cães Adultos Raças Pequenas Carne ao Molho 100g
+                  </h5>
+                  <p class="card-text">
+                    <span class="text-decoration-line-through text-secondary">De: R$ 3,29</span> 
+                    <br>
+                    <span class="text-color fw-bold">Por: R$ 3,03(pix)</span>  
+                    <br>
+                    <span class="">R$ 3,19(cartão ou boleto)</span>
+                  </p>
+                </div>
+              </div>
+              <!-- Product actions-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <div class="text-center ">
+                    <a class="btn btn-outline-dark btn-width mb-3" href="#">Comprar</a>
+                    <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
+                  </div>
+              </div>
           </div>
+      </div>
 
-          <div class="col-lg-6 mt-3">
-            <h3 class="mb-3">
-              <span class="text-color">NOSSA HISTORIA</span>  <br>
-              <span class="fw-bold">UM POUCO SOBRE NÓS</span>
-            </h3>  
-            <p class="lh-lg">
-              O Mundo Pet, foi inaugurado no ano de 2022, temos o espaço de loja e banho e tosa, trabalhamos para que você e seus pets tenham a melhor experiência em nossa loja, seja através dos serviços de estética ou pela variedade de produtos.
-            </p> 
-            <p class="lh-lg">
-              Nosso espaço, conta com profissionais muito bem qualificados, que irão cuidar do seu pet pensando em primeiro lugar na saúde e bem estar, com todo cuidado e carinho que ele merece. Tendo como objetivo atendê-lo com excelência, com humanização, acolhimento, cuidado e muito carinho
-            </p>            
-            <p class="lh-lg">
-              Estamos localizados na zona leste de São Paulo em São Miguel Paulista, próximo ao Cemiterio da Sudade e do Supermercado PEPE, você que é da região venha nos fazer uma visita.
+      <div class="col-12 mb-5">
+        <div class="card h-100">
+            <!-- Product image-->
+            <img class="card-img-top" src="assets/image/shop/image_10.webp" alt="Bifinho Keldog Baby Para Cães Filhotes Sabor Carne e Leite 65g" />
+            <!-- Product details-->
+            <div class="card-body p-4">
+              <div class="">
+                <!-- Product name-->
+                <h5 class="fw-bolder">
+                  Bifinho Keldog Baby Para Cães Filhotes Sabor Carne e Leite 65g
+                </h5>
+                <p class="card-text">
+                  <span class="text-decoration-line-through text-secondary">De: R$ 4,09</span> 
+                  <br>
+                  <span class="text-color fw-bold">Por: R$ 3,77(pix)</span>  
+                  <br>
+                  <span class="">R$ 3,97(cartão ou boleto)</span>
+                </p>
+              </div>
+            </div>
+            <!-- Product actions-->
+            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center ">
+                  <a class="btn btn-outline-dark btn-width mb-3" href="#">Comprar</a>
+                  <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 mb-5">
+      <div class="card h-100">
+          <!-- Product image-->
+          <img class="card-img-top" src="assets/image/shop/image_12.webp" alt="Osso Natural Recheado 6″ Sabor Carne Para Cães Bonapet" />
+          <!-- Product details-->
+          <div class="card-body p-4">
+            <div class="">
+              <!-- Product name-->
+              <h5 class="fw-bolder">
+                Osso Natural Recheado 6″ Sabor Carne Para Cães Bonapet
+              </h5>
+              <p class="card-text">
+                <span class="text-decoration-line-through text-secondary">De: R$ 11,09</span> 
+                <br>
+                <span class="text-color fw-bold">Por: R$ 8,01(pix)</span>  
+                <br>
+                <span class="">R$ 8,43(cartão ou boleto)</span>
+              </p>
+            </div>
+          </div>
+          <!-- Product actions-->
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+              <div class="text-center ">
+                <a class="btn btn-outline-dark btn-width mb-3" href="#">Comprar</a>
+                <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="col-12 mb-5">
+    <div class="card h-100">
+        <!-- Product image-->
+        <img class="card-img-top" src="assets/image/shop/image_9.png" alt="Ração Úmida Whiskas Sachê Gatos Adultos 7+ Carne Ao Molho 85g" />
+        <!-- Product details-->
+        <div class="card-body p-4">
+          <div class="">
+            <!-- Product name-->
+            <h5 class="fw-bolder">
+              Ração Úmida Whiskas Sachê Gatos Adultos 7+ Carne Ao Molho 85g
+            </h5>
+            <p class="card-text">
+              <span class="text-decoration-line-through text-secondary">De: R$ 3,29</span> 
+              <br>
+              <span class="text-color fw-bold">Por: R$ 3,03(pix)</span>  
+              <br>
+              <span class="">R$ 3,19(cartão ou boleto)</span>
             </p>
           </div>
-
-          <div class="row align-items-center mt-3" id="services-provided">
-            <div class="col-lg-6">
-              <h3 class="mb-3">
-                <span class="text-color">NOSSOS SERVIÇOS</span>  <br>
-                <span class="fw-bold">O MELHOR PARA SEU PET</span>
-              </h3>  
-              <p class="lh-lg">
-                O Mundo Pet é especializado em banho e tosa de pets. Sempre trazendo inovações com a finalidade de maximizar resultados.
-              </p>
-              <p class="lh-lg">
-                Temos o compromisso de manter o mais alto nível de atendimento e profissionalismo em um ambiente seguro e limpo. Nossa equipe trabalhará em conjunto para alcançar o mais alto padrão de qualidade de serviço.
-              </p>
-              <p class="lh-lg">
-                Aqui no Mundo Pet você encontra:
-              </p>
-
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  SERVIÇO DE BANHO E TOSA
-                </li>
-                <li class="list-group-item">
-                  PRODUTOS DE HIGIENE PARA SEU PET
-                </li>
-                <li class="list-group-item">
-                  BRINQUEDOS
-                </li>
-                <li class="list-group-item">
-                  ROUPAS PARA PETS
-                </li>
-                <li class="list-group-item">
-                  REMÉDIOS PARA PETS
-                </li>
-                <li class="list-group-item">
-                  RAÇÕES DE DIVERSAS 
-                </li>
-              </ul>
+        </div>
+        <!-- Product actions-->
+        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center ">
+              <a class="btn btn-outline-dark btn-width mb-3" href="#">Comprar</a>
+              <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
             </div>
+        </div>
+    </div>
+</div>
 
-            <div class="col-lg-6 mt-3 mb-5">
-              <img src="assets/image/compras.jpg" alt="" class="img-fluid rounded" >
-            </div>            
+<div class="col-12 mb-5">
+  <div class="card h-100">
+      <!-- Product image-->
+      <img class="card-img-top" src="assets/image/shop/image_5.png" alt="Ração Whiskas Gatos Adultos Castrados Peixe 2,7kg" />
+      <!-- Product details-->
+      <div class="card-body p-4">
+        <div class="">
+          <!-- Product name-->
+          <h5 class="fw-bolder">
+            Ração Whiskas Gatos Adultos Castrados Peixe 2,7kg
+          </h5>
+          <p class="card-text">
+            <span class="text-decoration-line-through text-secondary">De: R$ 56,99</span> 
+            <br>
+            <span class="text-color fw-bold">Por: R$ 54,14(pix)</span>  
+            <br>
+            <span class="">R$ 56,99(cartão ou boleto)</span>
+          </p>
+        </div>
+      </div>
+      <!-- Product actions-->
+      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+          <div class="text-center ">
+            <a class="btn btn-outline-dark btn-width mb-3" href="#">Comprar</a>
+            <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
           </div>
+      </div>
+  </div>
+</div>
+
+<div class="col-12 mb-5">
+  <div class="card h-100">
+      <!-- Product image-->
+      <img class="card-img-top" src="assets/image/shop/image_8.png" alt="Petisco Friskies Party Mix Para Gatos Adultos Sabor Frango 40g" />
+      <!-- Product details-->
+      <div class="card-body p-4">
+        <div class="">
+          <!-- Product name-->
+          <h5 class="fw-bolder">
+            Petisco Friskies Party Mix Para Gatos Adultos Sabor Frango 40g
+          </h5>
+          <p class="card-text">
+            <span class="text-decoration-line-through text-secondary">De: R$ 7,19</span> 
+            <br>
+            <span class="text-color fw-bold">Por: R$ 6,62(pix)</span>  
+            <br>
+            <span class="">R$ 6,97(cartão ou boleto)</span>
+          </p>
+        </div>
+      </div>
+      <!-- Product actions-->
+      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+          <div class="text-center ">
+            <a class="btn btn-outline-dark btn-width mb-3" href="#">Comprar</a>
+            <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="col-12 mb-5">
+  <div class="card h-100">
+      <!-- Product image-->
+      <img class="card-img-top" src="assets/image/shop/image_9.png" alt="Petisco Whiskas Temptations Anti Bola De Pelo Gatos Adultos 40g" />
+      <!-- Product details-->
+      <div class="card-body p-4">
+        <div class="">
+          <!-- Product name-->
+          <h5 class="fw-bolder">
+            Petisco Whiskas Temptations Anti Bola De Pelo Gatos Adultos 40g
+          </h5>
+          <p class="card-text">
+            <span class="text-decoration-line-through text-secondary">De: R$ 11,09</span> 
+            <br>
+            <span class="text-color fw-bold">Por: R$ 8,01(pix)</span>  
+            <br>
+            <span class="">R$ 8,43(cartão ou boleto)</span>
+          </p>
+        </div>
+      </div>
+      <!-- Product actions-->
+      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+          <div class="text-center ">
+            <a class="btn btn-outline-dark btn-width mb-3" href="#">Comprar</a>
+            <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="col-12 mb-5">
+  <div class="card h-100">
+      <!-- Product image-->
+      <img class="card-img-top" src="assets/image/shop/image_9.png" alt="Petisco Whiskas Temptations Anti Bola De Pelo Gatos Adultos 40g" />
+      <!-- Product details-->
+      <div class="card-body p-4">
+        <div class="">
+          <!-- Product name-->
+          <h5 class="fw-bolder">
+            Petisco Whiskas Temptations Anti Bola De Pelo Gatos Adultos 40g
+          </h5>
+          <p class="card-text">
+            <span class="text-decoration-line-through text-secondary">De: R$ 11,09</span> 
+            <br>
+            <span class="text-color fw-bold">Por: R$ 8,01(pix)</span>  
+            <br>
+            <span class="">R$ 8,43(cartão ou boleto)</span>
+          </p>
+        </div>
+      </div>
+      <!-- Product actions-->
+      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+          <div class="text-center ">
+            <a class="btn btn-outline-dark btn-width mb-3" href="#">Comprar</a>
+            <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="col-12 mb-5">
+  <div class="card h-100">
+      <!-- Product image-->
+      <img class="card-img-top" src="assets/image/shop/image_9.png" alt="Petisco Whiskas Temptations Anti Bola De Pelo Gatos Adultos 40g" />
+      <!-- Product details-->
+      <div class="card-body p-4">
+        <div class="">
+          <!-- Product name-->
+          <h5 class="fw-bolder">
+            Petisco Whiskas Temptations Anti Bola De Pelo Gatos Adultos 40g
+          </h5>
+          <p class="card-text">
+            <span class="text-decoration-line-through text-secondary">De: R$ 11,09</span> 
+            <br>
+            <span class="text-color fw-bold">Por: R$ 8,01(pix)</span>  
+            <br>
+            <span class="">R$ 8,43(cartão ou boleto)</span>
+          </p>
+        </div>
+      </div>
+      <!-- Product actions-->
+      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+          <div class="text-center ">
+            <a class="btn btn-outline-dark btn-width mb-3" href="#">Comprar</a>
+            <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="col-12 mb-5">
+  <div class="card h-100">
+      <!-- Product image-->
+      <img class="card-img-top" src="assets/image/shop/image_9.png" alt="Petisco Whiskas Temptations Anti Bola De Pelo Gatos Adultos 40g" />
+      <!-- Product details-->
+      <div class="card-body p-4">
+        <div class="">
+          <!-- Product name-->
+          <h5 class="fw-bolder">
+            Petisco Whiskas Temptations Anti Bola De Pelo Gatos Adultos 40g
+          </h5>
+          <p class="card-text">
+            <span class="text-decoration-line-through text-secondary">De: R$ 11,09</span> 
+            <br>
+            <span class="text-color fw-bold">Por: R$ 8,01(pix)</span>  
+            <br>
+            <span class="">R$ 8,43(cartão ou boleto)</span>
+          </p>
+        </div>
+      </div>
+      <!-- Product actions-->
+      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+          <div class="text-center ">
+            <a class="btn btn-outline-dark btn-width mb-3" href="#">Comprar</a>
+            <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="col-12 mb-5">
+  <div class="card h-100">
+      <!-- Product image-->
+      <img class="card-img-top" src="assets/image/shop/image_9.png" alt="Petisco Whiskas Temptations Anti Bola De Pelo Gatos Adultos 40g" />
+      <!-- Product details-->
+      <div class="card-body p-4">
+        <div class="">
+          <!-- Product name-->
+          <h5 class="fw-bolder">
+            Petisco Whiskas Temptations Anti Bola De Pelo Gatos Adultos 40g
+          </h5>
+          <p class="card-text">
+            <span class="text-decoration-line-through text-secondary">De: R$ 11,09</span> 
+            <br>
+            <span class="text-color fw-bold">Por: R$ 8,01(pix)</span>  
+            <br>
+            <span class="">R$ 8,43(cartão ou boleto)</span>
+          </p>
+        </div>
+      </div>
+      <!-- Product actions-->
+      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+          <div class="text-center ">
+            <a class="btn btn-outline-dark btn-width mb-3" href="#">Comprar</a>
+            <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+  
+              
 
         </div>
       </div>
     </section>
-  
+
     <!--Start section-resister-->
     <section class="section-resister bg-color " id="">
       <div class="container-fluid p-4 ">
@@ -204,7 +529,7 @@
               <a href="#" target="_blank" class="link-offset-2 link-underline link-underline-opacity-0">
                 <img src="assets/image/icons/sociais/icons_instagram.png" alt="instagram" width="50rem" title="Instagram">
               </a>
-              
+   
               <a href="#" target="_blank" class="link-offset-2 link-underline link-underline-opacity-0">  
                 <img src="assets/image/icons/sociais/icons_facebook.png" alt="facebook" width="50rem" title="Facebook">
               </a>
@@ -220,7 +545,7 @@
     <!--End section-resister-->
   </main>
   <!--Start Footer-->
-  <footer class="footer pt-1">
+  <footer class="footer pt-1 bg-light">
     <div class="container-fluid">
       <div class="row align-items-start">
         <div class="col-md-4 col-lg-3 mt-2">
@@ -294,7 +619,6 @@
       </div>
     </div>
   </footer>
-  <!--End Footer-->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
 
