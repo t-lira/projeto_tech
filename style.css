@@ -1,43 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-
-
-/*header icon*/
-.icon-header-profile{
-  width: 3rem;
+.img-icon-header{
+  width: 2rem;
 }
-
 /*banners*/
 .banner-top{
-  background-image: url('assets/image/pexels-photo-406014.jpeg');
-  background-repeat: no-repeat;
-  background-position:bottom;
-  background-size: cover;
-  height: calc(100vh - 150px);
+  background: url('assets/image/objetos-coloridos.jpg')no-repeat bottom/cover;
+  height: 50vh;
 }
 
 .banner-top-form{
-  background-image: url('assets/image/brinquedos-coloridos.jpg');
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
+  background: url('assets/image/brinquedos-coloridos.jpg')no-repeat center/cover;
   height: 50vh;
-}
-
-.banner-form{
-  background-image: url('assets/image/objetos-coloridos.jpg');
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  height: 50vh;
-}
-
-.bg-location{
-  background-image: url('assets/image/png-image-pets.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; 
 }
 
 /*text color */
@@ -50,10 +25,20 @@
   font-family: 'Niconne', cursive;
 }
 
+@media screen and (max-width:20rem) {
+  .small-letter{ font-size: 1rem;
+}
+}
+
+
 /*bg color */
 
 .bg-color{
   background-color: #6C65B9;
+}
+
+.bg-color-main{
+  background-color: #f5f5f5;
 }
 
 /*buttons*/
@@ -64,7 +49,18 @@
 /*iframe map*/
 .iframe-location{
   min-width: 100%;
-  min-height: 30rem;
+  min-height: 32rem;
+}
+
+/*Form*/
+.form-color{
+  background-color: #e6e6e6; 
+  padding: 1.5rem; 
+  border-radius: 1rem;
+}
+
+.input-color{
+  background-color: #cccc;
 }
 
 

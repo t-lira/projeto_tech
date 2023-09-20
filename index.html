@@ -16,12 +16,51 @@
 <body>    
   <!--Start header-->    
   <header class="header bg-color">
-    <nav class="navbar navbar-expand-lg navbar-dark static-top bg-header">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/image/icons/logo_icon.png" alt="logo" height="36">
-        </a>
+    <div class="container-fluid">
+      <div class=" row bg-light align-items-center p-2 p-lg-4">
+        <div class="col-6 col-lg-4">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/image/icons/logo_icon.png" alt="logo" height="50">
+          </a>
+        </div>
 
+        <div class="col-6 col-lg-4 d-lg-none">
+          <form class="d-flex ms-5 float-end">
+            <button class="btn btn-light rounded-pill" type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg>
+              <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+            </button>
+          </form>       
+        </div>
+
+        <div class="col-12 col-lg-4 mt-2 mt-lg-0">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 float-end " type="search" placeholder="O que você está procurando" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+          </button>
+          </form>       
+        </div>
+
+        <div class="col-6 col-lg-4 d-none d-lg-block">
+          <form class="d-flex ms-5 float-end">
+            <button class="btn btn-light rounded-pill" type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg>
+              <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+            </button>
+          </form>       
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark static-top bg-header pe-5">
+      <div class="container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,14 +68,20 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link  fs-5 link-light" href="index.html">Home</a>
+              <a class="nav-link  fs-5 link-light" href="index.html">
+                Home
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-5 link-light" href="about.html">Quem Somos</a>
+              <a class="nav-link fs-5 link-light" href="about.html">
+                Quem Somos
+              </a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link  fs-5 link-light" href="services.html">Serviços</a>
+              <a class="nav-link  fs-5 link-light" href="services.html">
+                Serviços
+              </a>
             </li>
 
             <li class="nav-item dropdown">
@@ -45,41 +90,40 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="contact.html">Entre em Contato</a>
+                  <a class="dropdown-item" href="contact.html">
+                    Entre em Contato
+                  </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="work.html">Trabalhe Conosco</a>
+                  <a class="dropdown-item" href="work.html">
+                    Trabalhe Conosco
+                  </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="contact.html">Localização</a>
+                  <a class="dropdown-item" href="contact.html">
+                    Localização
+                  </a>
                 </li>
-                <li><hr class="dropdown-divider"></li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="about-me.html">
+                    <img src="assets/image/about-me/profile-pic.png" alt="" class="img-icon-header">
+                    Thais Lira         
+                  </a>
                 </li>
               </ul>
             </li>
-
-            <form class="d-flex ms-5">
-              <button class="btn btn-light" type="submit">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                </svg>
-                <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-              </button>
-            </form>
-
-
-
-          </ul>
-        </div>
-      </div>   
-    </nav>
+          </ul> 
+        </nav>     
+      </div>  
+    </div>  
   </header>
 
-  <main class="">
+  <main class="bg-color-main">
  
-    <section class="banner-top">   
+    <section class="banner-top ">   
       <!--Image in CSS-->
     </section>
    
@@ -124,26 +168,32 @@
               na sua primeira compra!
             </p>
             <p class="fs-6 mb-0">
-              use o cupom <span class="bg-success p-1 rounded text-light">#PETFELIZ</span> 
+              use o cupom <span class="bg-success p-1 rounded text-light px-2">#PETFELIZ</span> 
             </p>
           </div>
 
         </div>
       </div>
     </section>
-    <section class="py-5">
-      <div class="container px-4 px-lg-5 mt-5">
-        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 
-          <div class="col-12 mb-5">
+
+    <section class="">
+      <div class="container mt-5">      
+        <div class="col-12">
+          <h1 class="text-color mb-4">
+            Produtos em destaque
+          </h1>
+        </div>
+        <div class="row  row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+          <div class="col-6 mb-3 mb-lg-5">
             <div class="card h-100">
                 <!-- Product image-->
                 <img class="card-img-top" src="assets/image/shop/image_1.png" alt="Ração Pedigree Para Cães Adultos Raças Pequenas Carne e Vegetais 15kg" />
                 <!-- Product details-->
-                <div class="card-body p-4">
+                <div class="card-body p-1 p-lg-4 ">
                   <div class="">
                     <!-- Product name-->
-                    <h5 class="fw-bolder">
+                    <h5 class="fw-bolder small-letter">
                       Ração Pedigree Para Cães Adultos Raças Pequenas Carne e Vegetais 15kg
                     </h5>
                     <p class="card-text">
@@ -156,24 +206,24 @@
                   </div>
                 </div>
                 <!-- Product actions-->
-                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="card-footer p-1 p-lg-4 pt-0 border-top-0 bg-transparent">
                     <div class="text-center ">
-                      <a class="btn btn-outline-dark btn-width mb-3" href="#">Comprar</a>
+                      <a class="btn btn-dark btn-width mb-3" href="#">Comprar</a>
                       <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="col-12 mb-5">
+        <div class="col-6 mb-3 mb-lg-5">
           <div class="card h-100">
               <!-- Product image-->
               <img class="card-img-top" src="assets/image/shop/image_11.webp" alt="Ração Úmida Pedigree Sachê Cães Adultos Raças Pequenas Carne ao Molho 100g" />
               <!-- Product details-->
-              <div class="card-body p-4">
+              <div class="card-body p-1 p-lg-4">
                 <div class="">
                   <!-- Product name-->
-                  <h5 class="fw-bolder">
+                  <h5 class="fw-bolder small-letter">
                     Ração Úmida Pedigree Sachê Cães Adultos Raças Pequenas Carne ao Molho 100g
                   </h5>
                   <p class="card-text">
@@ -185,25 +235,25 @@
                   </p>
                 </div>
               </div>
-              <!-- Product actions-->
-              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <!-- Product actions-->
+                <div class="card-footer p-1 p-lg-4 pt-0 border-top-0 bg-transparent">
                   <div class="text-center ">
-                    <a class="btn btn-outline-dark btn-width mb-3" href="#">Comprar</a>
+                    <a class="btn btn-dark btn-width mb-3" href="#">Comprar</a>
                     <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
                   </div>
               </div>
           </div>
       </div>
 
-      <div class="col-12 mb-5">
+      <div class="col-6 mb-3 mb-lg-5">
         <div class="card h-100">
             <!-- Product image-->
             <img class="card-img-top" src="assets/image/shop/image_10.webp" alt="Bifinho Keldog Baby Para Cães Filhotes Sabor Carne e Leite 65g" />
             <!-- Product details-->
-            <div class="card-body p-4">
+            <div class="card-body p-1 p-lg-4">
               <div class="">
                 <!-- Product name-->
-                <h5 class="fw-bolder">
+                <h5 class="fw-bolder small-letter">
                   Bifinho Keldog Baby Para Cães Filhotes Sabor Carne e Leite 65g
                 </h5>
                 <p class="card-text">
@@ -215,25 +265,25 @@
                 </p>
               </div>
             </div>
-            <!-- Product actions-->
-            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                <div class="text-center ">
-                  <a class="btn btn-outline-dark btn-width mb-3" href="#">Comprar</a>
-                  <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
-                </div>
+                <!-- Product actions-->
+                <div class="card-footer p-1 p-lg-4 pt-0 border-top-0 bg-transparent">
+                  <div class="text-center ">
+                    <a class="btn btn-dark btn-width mb-3" href="#">Comprar</a>
+                    <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
+                  </div>
             </div>
         </div>
     </div>
 
-    <div class="col-12 mb-5">
+    <div class="col-6 mb-3 mb-lg-5">
       <div class="card h-100">
           <!-- Product image-->
           <img class="card-img-top" src="assets/image/shop/image_12.webp" alt="Osso Natural Recheado 6″ Sabor Carne Para Cães Bonapet" />
           <!-- Product details-->
-          <div class="card-body p-4">
+          <div class="card-body p-1 p-lg-4">
             <div class="">
               <!-- Product name-->
-              <h5 class="fw-bolder">
+              <h5 class="fw-bolder small-letter">
                 Osso Natural Recheado 6″ Sabor Carne Para Cães Bonapet
               </h5>
               <p class="card-text">
@@ -246,24 +296,25 @@
             </div>
           </div>
           <!-- Product actions-->
-          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-              <div class="text-center ">
-                <a class="btn btn-outline-dark btn-width mb-3" href="#">Comprar</a>
-                <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
-              </div>
+                <!-- Product actions-->
+                <div class="card-footer p-1 p-lg-4 pt-0 border-top-0 bg-transparent">
+                  <div class="text-center ">
+                    <a class="btn btn-dark btn-width mb-3" href="#">Comprar</a>
+                    <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
+                  </div>
           </div>
       </div>
   </div>
 
-  <div class="col-12 mb-5">
+  <div class="col-6 mb-3 mb-lg-5">
     <div class="card h-100">
         <!-- Product image-->
         <img class="card-img-top" src="assets/image/shop/image_9.png" alt="Ração Úmida Whiskas Sachê Gatos Adultos 7+ Carne Ao Molho 85g" />
         <!-- Product details-->
-        <div class="card-body p-4">
+        <div class="card-body p-1 p-lg-4">
           <div class="">
             <!-- Product name-->
-            <h5 class="fw-bolder">
+            <h5 class="fw-bolder small-letter">
               Ração Úmida Whiskas Sachê Gatos Adultos 7+ Carne Ao Molho 85g
             </h5>
             <p class="card-text">
@@ -275,25 +326,25 @@
             </p>
           </div>
         </div>
-        <!-- Product actions-->
-        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-            <div class="text-center ">
-              <a class="btn btn-outline-dark btn-width mb-3" href="#">Comprar</a>
-              <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
-            </div>
+                <!-- Product actions-->
+                <div class="card-footer p-1 p-lg-4 pt-0 border-top-0 bg-transparent">
+                  <div class="text-center ">
+                    <a class="btn btn-dark btn-width mb-3" href="#">Comprar</a>
+                    <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
+                  </div>
         </div>
     </div>
 </div>
 
-<div class="col-12 mb-5">
+<div class="col-6 mb-3 mb-lg-5">
   <div class="card h-100">
       <!-- Product image-->
       <img class="card-img-top" src="assets/image/shop/image_5.png" alt="Ração Whiskas Gatos Adultos Castrados Peixe 2,7kg" />
       <!-- Product details-->
-      <div class="card-body p-4">
+      <div class="card-body p-1 p-lg-4">
         <div class="">
           <!-- Product name-->
-          <h5 class="fw-bolder">
+          <h5 class="fw-bolder small-letter">
             Ração Whiskas Gatos Adultos Castrados Peixe 2,7kg
           </h5>
           <p class="card-text">
@@ -305,25 +356,25 @@
           </p>
         </div>
       </div>
-      <!-- Product actions-->
-      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-          <div class="text-center ">
-            <a class="btn btn-outline-dark btn-width mb-3" href="#">Comprar</a>
-            <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
-          </div>
+                <!-- Product actions-->
+                <div class="card-footer p-1 p-lg-4 pt-0 border-top-0 bg-transparent">
+                  <div class="text-center ">
+                    <a class="btn btn-dark btn-width mb-3" href="#">Comprar</a>
+                    <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
+                  </div>
       </div>
   </div>
 </div>
 
-<div class="col-12 mb-5">
+<div class="col-6 mb-3 mb-lg-5">
   <div class="card h-100">
       <!-- Product image-->
       <img class="card-img-top" src="assets/image/shop/image_8.png" alt="Petisco Friskies Party Mix Para Gatos Adultos Sabor Frango 40g" />
       <!-- Product details-->
-      <div class="card-body p-4">
+      <div class="card-body p-1 p-lg-4">
         <div class="">
           <!-- Product name-->
-          <h5 class="fw-bolder">
+          <h5 class="fw-bolder small-letter">
             Petisco Friskies Party Mix Para Gatos Adultos Sabor Frango 40g
           </h5>
           <p class="card-text">
@@ -336,24 +387,25 @@
         </div>
       </div>
       <!-- Product actions-->
-      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-          <div class="text-center ">
-            <a class="btn btn-outline-dark btn-width mb-3" href="#">Comprar</a>
-            <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
-          </div>
+                <!-- Product actions-->
+                <div class="card-footer p-1 p-lg-4 pt-0 border-top-0 bg-transparent">
+                  <div class="text-center ">
+                    <a class="btn btn-dark btn-width mb-3" href="#">Comprar</a>
+                    <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
+                  </div>
       </div>
   </div>
 </div>
 
-<div class="col-12 mb-5">
+<div class="col-6 mb-3 mb-lg-5">
   <div class="card h-100">
       <!-- Product image-->
       <img class="card-img-top" src="assets/image/shop/image_9.png" alt="Petisco Whiskas Temptations Anti Bola De Pelo Gatos Adultos 40g" />
       <!-- Product details-->
-      <div class="card-body p-4">
+      <div class="card-body p-1 p-lg-4">
         <div class="">
           <!-- Product name-->
-          <h5 class="fw-bolder">
+          <h5 class="fw-bolder small-letter">
             Petisco Whiskas Temptations Anti Bola De Pelo Gatos Adultos 40g
           </h5>
           <p class="card-text">
@@ -365,25 +417,25 @@
           </p>
         </div>
       </div>
-      <!-- Product actions-->
-      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-          <div class="text-center ">
-            <a class="btn btn-outline-dark btn-width mb-3" href="#">Comprar</a>
-            <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
-          </div>
+                <!-- Product actions-->
+                <div class="card-footer p-1 p-lg-4 pt-0 border-top-0 bg-transparent">
+                  <div class="text-center ">
+                    <a class="btn btn-dark btn-width mb-3" href="#">Comprar</a>
+                    <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
+                  </div>
       </div>
   </div>
 </div>
 
-<div class="col-12 mb-5">
+<div class="col-6 mb-3 mb-lg-5">
   <div class="card h-100">
       <!-- Product image-->
       <img class="card-img-top" src="assets/image/shop/image_9.png" alt="Petisco Whiskas Temptations Anti Bola De Pelo Gatos Adultos 40g" />
       <!-- Product details-->
-      <div class="card-body p-4">
+      <div class="card-body p-1 p-lg-4">
         <div class="">
           <!-- Product name-->
-          <h5 class="fw-bolder">
+          <h5 class="fw-bolder small-letter">
             Petisco Whiskas Temptations Anti Bola De Pelo Gatos Adultos 40g
           </h5>
           <p class="card-text">
@@ -395,25 +447,25 @@
           </p>
         </div>
       </div>
-      <!-- Product actions-->
-      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-          <div class="text-center ">
-            <a class="btn btn-outline-dark btn-width mb-3" href="#">Comprar</a>
-            <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
-          </div>
+                <!-- Product actions-->
+                <div class="card-footer p-1 p-lg-4 pt-0 border-top-0 bg-transparent">
+                  <div class="text-center ">
+                    <a class="btn btn-dark btn-width mb-3" href="#">Comprar</a>
+                    <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
+                  </div>
       </div>
   </div>
 </div>
 
-<div class="col-12 mb-5">
+<div class="col-6 mb-3 mb-lg-5">
   <div class="card h-100">
       <!-- Product image-->
       <img class="card-img-top" src="assets/image/shop/image_9.png" alt="Petisco Whiskas Temptations Anti Bola De Pelo Gatos Adultos 40g" />
       <!-- Product details-->
-      <div class="card-body p-4">
+      <div class="card-body p-1 p-lg-4">
         <div class="">
           <!-- Product name-->
-          <h5 class="fw-bolder">
+          <h5 class="fw-bolder small-letter">
             Petisco Whiskas Temptations Anti Bola De Pelo Gatos Adultos 40g
           </h5>
           <p class="card-text">
@@ -425,25 +477,25 @@
           </p>
         </div>
       </div>
-      <!-- Product actions-->
-      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-          <div class="text-center ">
-            <a class="btn btn-outline-dark btn-width mb-3" href="#">Comprar</a>
-            <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
-          </div>
+                <!-- Product actions-->
+                <div class="card-footer p-1 p-lg-4 pt-0 border-top-0 bg-transparent">
+                  <div class="text-center ">
+                    <a class="btn btn-dark btn-width mb-3" href="#">Comprar</a>
+                    <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
+                  </div>
       </div>
   </div>
 </div>
 
-<div class="col-12 mb-5">
+<div class="col-6 mb-3 mb-lg-5">
   <div class="card h-100">
       <!-- Product image-->
       <img class="card-img-top" src="assets/image/shop/image_9.png" alt="Petisco Whiskas Temptations Anti Bola De Pelo Gatos Adultos 40g" />
       <!-- Product details-->
-      <div class="card-body p-4">
+      <div class="card-body p-1 p-lg-4">
         <div class="">
           <!-- Product name-->
-          <h5 class="fw-bolder">
+          <h5 class="fw-bolder small-letter">
             Petisco Whiskas Temptations Anti Bola De Pelo Gatos Adultos 40g
           </h5>
           <p class="card-text">
@@ -455,25 +507,25 @@
           </p>
         </div>
       </div>
-      <!-- Product actions-->
-      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-          <div class="text-center ">
-            <a class="btn btn-outline-dark btn-width mb-3" href="#">Comprar</a>
-            <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
-          </div>
+                <!-- Product actions-->
+                <div class="card-footer p-1 p-lg-4 pt-0 border-top-0 bg-transparent">
+                  <div class="text-center ">
+                    <a class="btn btn-dark btn-width mb-3" href="#">Comprar</a>
+                    <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
+                  </div>
       </div>
   </div>
 </div>
 
-<div class="col-12 mb-5">
+<div class="col-6 mb-3 mb-lg-5">
   <div class="card h-100">
       <!-- Product image-->
       <img class="card-img-top" src="assets/image/shop/image_9.png" alt="Petisco Whiskas Temptations Anti Bola De Pelo Gatos Adultos 40g" />
       <!-- Product details-->
-      <div class="card-body p-4">
+      <div class="card-body p-1 p-lg-4">
         <div class="">
           <!-- Product name-->
-          <h5 class="fw-bolder">
+          <h5 class="fw-bolder small-letter">
             Petisco Whiskas Temptations Anti Bola De Pelo Gatos Adultos 40g
           </h5>
           <p class="card-text">
@@ -485,64 +537,52 @@
           </p>
         </div>
       </div>
-      <!-- Product actions-->
-      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-          <div class="text-center ">
-            <a class="btn btn-outline-dark btn-width mb-3" href="#">Comprar</a>
-            <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
-          </div>
+                <!-- Product actions-->
+                <div class="card-footer p-1 p-lg-4 pt-0 border-top-0 bg-transparent">
+                  <div class="text-center ">
+                    <a class="btn btn-dark btn-width mb-3" href="#">Comprar</a>
+                    <a class="btn btn-outline-dark btn-width" href="#">Adicionar ao carrinho</a>
+                  </div>
       </div>
   </div>
 </div>
-
-
-
-
-  
-              
-
         </div>
       </div>
     </section>
 
     <!--Start section-resister-->
     <section class="section-resister bg-color " id="">
-      <div class="container-fluid p-4 ">
-        <div class="row align-items-start">
-          <div class="col-md-9 col-lg-10">
-            <h4 class="text-white mb-3">
-              Cadastre-se e receba ofertas por e-mail
+      <div class="container-fluid p-4">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-4">
+            <h4 class="text-white mb-3 mb-lg-0">
+              <span class="text-uppercase fw-bolder">cadastre-se</span>  <br>
+              <span class="fs-5">Para receber sempre as melhores ofertas</span>
             </h4>
+          </div>
+          <div class="col-12 col-lg-8 ">
+            <form action="" method="post" class="">
+              <div class="row">
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                  <label for="register-email" class="form-label text-white d-none">Email:</label>
+                  <input type="text" class="form-control  form-control-lg" id="register-email" placeholder="Digite seu nome" required>
+                </div>
+  
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                  <label for="register-email" class="form-label text-white d-none">Email:</label>
+                  <input type="email" class="form-control  form-control-lg" id="register-email" placeholder="Digite seu e-mail" required>
+                </div>
 
-            <form action="" class="d-flex">
-              <div class="form-register col-lg-4">
-                <label for="register-email" class="form-label text-white d-none">Email:</label>
-                <input type="email" class="form-control " id="register-email" placeholder="Email">
+                <div class="col-12 col-lg-4">
+                  <input type="submit" value="Cadastrar" class="btn btn-outline-light btn-lg">
+                </div>
               </div>
-              <input type="submit" value="Cadastrar" class="btn btn-outline-light ms-4">
             </form>
           </div>
-
-          <div class="col-md-3 col-lg-2 mt-5 mt-md-0">
-            <h5 class="fs-4 mb-3 text-white">Redes Sociais</h5>
-            <div class="d-flex">
-              <a href="#" target="_blank" class="link-offset-2 link-underline link-underline-opacity-0">
-                <img src="assets/image/icons/sociais/icons_instagram.png" alt="instagram" width="50rem" title="Instagram">
-              </a>
-   
-              <a href="#" target="_blank" class="link-offset-2 link-underline link-underline-opacity-0">  
-                <img src="assets/image/icons/sociais/icons_facebook.png" alt="facebook" width="50rem" title="Facebook">
-              </a>
-            
-              <a href="#" target="_blank" class="link-offset-2 link-underline link-underline-opacity-0">
-                <img src="assets/image/icons/sociais/icons_twitter.png" alt="twitter" width="50rem" title="Twitter">
-              </a>
-            </div>
-          </div>
+    
         </div>
       </div>
     </section>
-    <!--End section-resister-->
   </main>
   <!--Start Footer-->
   <footer class="footer pt-1 bg-light">
