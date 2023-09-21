@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+/*bg*/
+.bg-main{
+  background-color: #efecf0;
+  }
+  
+  .bg-color-variety{
+    background-color: #ef4d6b7e;
+  }
+
+  /*text*/
+  .color-link-variety, .color-text-variety{
+    color: #EF4D6B;
+  }
+
+  
+  .font-text-variety{
+    font-family: 'Satisfy', cursive;
+  }
+
+  /*Card*/
+  .card-content{
+    height: 26rem;
+  }
+
+
+  /*button*/
+  .button{
+    background-color: transparent;
+    border: 1px solid #EF4D6B;
+    color: #EF4D6B;
+    transition: 0.5s;
+  }
+
+  .button:hover{
+    background-color:#EF4D6B;
+    color: #fff;
+  }
+  
+  /* Image */ 
+  .img-card{
+    width: 100%;
+    max-height: 15rem;
+  }
+
+  .img-profile{
+    width: 27rem;
+  }
+
+ 
