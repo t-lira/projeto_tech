@@ -263,20 +263,19 @@
             </h4>
           </div>
           <div class="col-12 col-lg-8 ">
-            <form action="" method="post" class="">
+            <form action="" method="post" id="form_register">
               <div class="row">
+
                 <div class="col-12 col-lg-4 mb-3 mb-lg-0">
-                  <label for="register-email" class="form-label text-white d-none">Email:</label>
-                  <input type="text" class="form-control  form-control-lg" id="register-email" placeholder="Digite seu nome" required>
+                  <input type="text" class="form-control  form-control-lg" id="register-name" placeholder="Digite seu nome" required>
                 </div>
   
                 <div class="col-12 col-lg-4 mb-3 mb-lg-0">
-                  <label for="register-email" class="form-label text-white d-none">Email:</label>
                   <input type="email" class="form-control  form-control-lg" id="register-email" placeholder="Digite seu e-mail" required>
                 </div>
 
                 <div class="col-12 col-lg-4">
-                  <input type="submit" value="Cadastrar" class="btn btn-outline-light btn-lg">
+                  <input type="submit" value="Cadastrar" class="btn btn-outline-light btn-lg" onclick="send_registration()">
                 </div>
               </div>
             </form>

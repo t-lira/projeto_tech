@@ -67,11 +67,17 @@ transition: 0.5s;
 }
 
 .button-more{
+  width: 90%;
   border: 1px solid #6C65B9;
   transition: 0.5s;
   color: #6C65B9;
   font-weight: bold;
-  
+}
+
+@media screen and (min-width:77.5rem) {
+  .button-more{
+    width: 25%;
+  }
 }
 
 .button-more:hover, .button:hover{

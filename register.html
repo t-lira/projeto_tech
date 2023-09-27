@@ -4,17 +4,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content=""><!--DESCREVER LOJA-->
+  <meta name="description" content="Petshop Mundo Pet">
   <meta name="robots" content="index,follow">
-  <link rel="shortcut icon" href="assets/image/icons/favicon_.png" type="image/x-icon"><!--ADICIONAR IMAGEM-->
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="assets/image/icons/favicon_.png" type="image/x-icon">
   <title>Mundo Pet</title>
+  <!-- Core theme CSS (includes Bootstrap)-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="reset.css">
 </head>
-
-<body>    
-  <!--Start header-->    
+<body>
+      <!--Start header-->    
   <header class="header bg-color">
     <!-- Content here -->
     <div class="container-fluid">
@@ -198,190 +199,169 @@
       </div>  
     </div>  
   </header>
+  <main class="bg-color-main">
+    <section>
+      <div class="container-fluid pt-5 pb-5 p-lg-5">
+        <h1 class="fw-bold">Minha conta</h1>
 
-   <!--Start Main-->
-  <main class="main bg-color-main">
-    <!--Start section banner-->
-    <section class="d-none d-lg-block banner-top-form">
-      <div class="container-fluid">
-        <div class="row">
-          <!--image in CSS-->
-        </div>
-      </div>
-    </section>
-
-    <!--Start section form-->
-    <section class="p-3">
-      <div class="container-fluid">
-        <div class="row">
-          <h3 class="mb-2 text-color fw-bold">
-            Cadastre seu currículo
-          </h3> 
-          <h4 class="mb-4">
-            Venha fazer parte da nossa equipe
-          </h4>
-
-          <form action="" method="post" class="form form-color">
-
-            <div class="row mb-3">
-              <div class="col">
-                <label for="firstName" class="form-label">Nome</label>
-                <input type="text" class="form-control input-color"  placeholder="Nome" name="firstName" id="firstName">
+        <div class="row mt-lg-5">
+          <div class="col-lg-6 border-end mt-5 mt-lg-0">
+            <h2 class="fw-bold">
+              Entrar
+            </h2>
+            <form action="" method="post" class="form-color">
+              <div class="mb-2">
+                <label for="" class="form-label">Nome de usuário ou e-mail</label>
+                <input type="text" class="form-control input-color" name="fist-name" id="fist-name" required>
               </div>
 
-              <div class="col">
-                <label for="lastName" class="form-label">Sobrenome</label>
-                <input type="text" class="form-control input-color"  placeholder="Sobrenome" name="lastName" id="lastName">
-              </div>
-            </div>
-
-
-            <div class="mb-3">
-              <label for="contactEmail" class="form-label">Email</label>
-              <input type="email" class="form-control input-color" placeholder="Email" name="contactEmail" id="contactEmail">
-            </div>
-
-            <div class="row mb-3">
-              <div class="col">
-                <label for="contactTelephone" class="form-label">Telefone</label>
-                <input type="number" class="form-control input-color"  placeholder="Telefone com DDD*" name="contactTelephone" id="contactTelephone">
+              <div class="mb-2">
+                <label for="password" class="form-label">Senha</label>
+                <input type="password" class="form-control input-color" name="password" id="password" required> 
               </div>
 
-              <div class="col">
-                <label for="contactCellphone" class="form-label">Celular </label>
-                <input type="number" class="form-control input-color"  placeholder="Celular com DDD*" name="contactCellphone" id="contactCellphone">
-              </div>
-            </div>
-
-            <div class="mb-3">
-              <label for="dataList" class="form-label ">Área de interesse</label>
-              <input class="form-control input-color" list="datalistOptions" id="dataList" >
-              <datalist id="datalistOptions">
-                <option value="Ajudante Geral">
-                <option value="Auxiliar de Petshop">
-                <option value="Banhista e Tosadora">
-                <option value="Vendedor">
-                <option value="Recepcionista">
-              </datalist>
-            </div>
-
-            <div class="mb-3">
-              <label for="formFile" class="form-label">Anexar currículo</label>
-              <input class="form-control input-color" type="file" id="formFile">
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-lg px-5  float-end mt-4">Enviar</button>
-
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <!--Start section-resister-->
-    <section class="section-resister bg-color " id="">
-      <div class="container-fluid p-4">
-        <div class="row align-items-center">
-          <div class="col-12 col-lg-4">
-            <h4 class="text-white mb-3 mb-lg-0">
-              <span class="text-uppercase fw-bolder">cadastre-se</span>  <br>
-              <span class="fs-5">Para receber sempre as melhores ofertas</span>
-            </h4>
-          </div>
-          <div class="col-12 col-lg-8 ">
-            <form action="" method="post" id="form_register">
-              <div class="row">
-
-                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
-                  <input type="text" class="form-control  form-control-lg" id="register-name" placeholder="Digite seu nome" required>
-                </div>
-  
-                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
-                  <input type="email" class="form-control  form-control-lg" id="register-email" placeholder="Digite seu e-mail" required>
-                </div>
-
-                <div class="col-12 col-lg-4">
-                  <input type="submit" value="Cadastrar" class="btn btn-outline-light btn-lg">
+              <div class="form-group">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customControlInline">
+                  <label class="custom-control-label" for="customControlInline">Lembrar-me</label>
                 </div>
               </div>
+
+              <button type="submit" value="submit" class="btn btn-primary  px-5 mt-3 " id="">Acessar</button>
             </form>
           </div>
-    
+
+          <div class="col-lg-6 mt-5 mt-lg-0">
+            <h2 class="fw-bold">
+              Cadastre-se
+            </h2>
+            
+            <form action="" method="post" class="form-color pb-5">
+              <div class="mb-2">
+                <label for="e-mail" class="form-label">Endereço de e-mail</label>
+                <input type="email" class="form-control input-color" name="e-mail" id="e-mail" required>
+              </div>
+
+              <div class="mb-2">
+                <label for="password" class="form-label">Senha</label>
+                <input type="password" class="form-control input-color" name="password" id="password" required> 
+              </div>
+
+
+
+              <button type="submit" value="submit" class="btn btn-primary  px-5 mt-3 " id="">Cadastre-se</button>
+            </form>
+      
+          </div>
         </div>
       </div>
     </section>
+  
+        <!--Start section-resister-->
+        <section class="section-resister bg-color " id="">
+          <div class="container-fluid p-4">
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-4">
+                <h4 class="text-white mb-3 mb-lg-0">
+                  <span class="text-uppercase fw-bolder">cadastre-se</span>  <br>
+                  <span class="fs-5">Para receber sempre as melhores ofertas</span>
+                </h4>
+              </div>
+              <div class="col-12 col-lg-8 ">
+                <form action="" method="post" id="form_register">
+                  <div class="row">
+    
+                    <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                      <input type="text" class="form-control  form-control-lg" id="register-name" placeholder="Digite seu nome" required>
+                    </div>
+      
+                    <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                      <input type="email" class="form-control  form-control-lg" id="register-email" placeholder="Digite seu e-mail" required>
+                    </div>
+    
+                    <div class="col-12 col-lg-4">
+                      <input type="submit" value="Cadastrar" class="btn btn-outline-light btn-lg" onclick="send_registration()">
+                    </div>
+                  </div>
+                </form>
+              </div>
+        
+            </div>
+          </div>
+        </section>
   </main>
 
-  <!--Start Footer-->
-  <footer class="footer pt-3 pt-1 bg-light">
-    <div class="container-fluid">
-      <div class="row align-items-start">
-
-        <div class="col-md-4 col-lg-3 mt-2">
-          <!--image-->
-          <img src="assets/image/icons/logo_icon.png" alt="" class="img-fluid">
-          <!--text-->
-          <p class="mt-3">
-            Na Mundo Pet você tem a certeza de que seu pet será tratado com todo amor e carinho que ele merece!
-          </p>
-        </div>
-
-        <div class="col-md-4 col-lg-3 mt-3">
-          <!-- title -->
-          <h5 class="mb-2 fw-bold color-primary">
-            Institucional
-          </h5>
-          <!-- navigation bar -->
-          <nav class="navbar">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a href="contact.html" class="link-nav-footer">
-                  Fale conosco
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="work.html" class="link-nav-footer">
-                  Trabalhe conosco
-                </a>                
-              </li>
-              <li class="nav-item">
-                <a href="services.html" class="link-nav-footer">
-                  Serviços
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-   
-        <div class="col-md-4 col-lg-3 mt-3">
-          <!-- title -->
-          <h5 class="mb-2 fw-bold color-primary">
-            Formas de pagamento
-          </h5>
-          <!--image-->
-          <img src="assets/image/card/cartoes_aceitos.png" alt="formas de pagamento aceitas: visa, mastercard, boleto bancário, hipercard, american express, elo, diners club, pix" class="img-fluid image-card">
-        </div>
-
-        <div class="col-md-12 col-lg-3 mt-3">
-          <!-- title -->
-          <h5 class="mb-2 fw-bold color-primary">
-            Selos de segurança
-          </h5>
-          <!-- image -->
-          <img src="assets/image/card/selos-color-fundoclaro-680x400-1.png" alt="selo de segurança, site seguro para compra" width="250rem">
-        </div>
+    <!--Start Footer-->
+    <footer class="footer pt-3 pt-1 bg-light">
+      <div class="container-fluid">
+        <div class="row align-items-start">
+  
+          <div class="col-md-4 col-lg-3 mt-2">
+            <!--image-->
+            <img src="assets/image/icons/logo_icon.png" alt="" class="img-fluid">
+            <!--text-->
+            <p class="mt-3">
+              Na Mundo Pet você tem a certeza de que seu pet será tratado com todo amor e carinho que ele merece!
+            </p>
+          </div>
+  
+          <div class="col-md-4 col-lg-3 mt-3">
+            <!-- title -->
+            <h5 class="mb-2 fw-bold color-primary">
+              Institucional
+            </h5>
+            <!-- navigation bar -->
+            <nav class="navbar">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="contact.html" class="link-nav-footer">
+                    Fale conosco
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="work.html" class="link-nav-footer">
+                    Trabalhe conosco
+                  </a>                
+                </li>
+                <li class="nav-item">
+                  <a href="services.html" class="link-nav-footer">
+                    Serviços
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
      
-        <div class="col-12 mt-2 border-top">
-          <p class="text-center pt-3">
-            Copyright - 2023 Mundo Pet - Todos os direitos reservados |   Desenvolvido por <a href="about-me.html" class="link-dark link-offset-2 link-underline link-underline-opacity-0">Thais Lira</a>
-          </p>
+          <div class="col-md-4 col-lg-3 mt-3">
+            <!-- title -->
+            <h5 class="mb-2 fw-bold color-primary">
+              Formas de pagamento
+            </h5>
+            <!--image-->
+            <img src="assets/image/card/cartoes_aceitos.png" alt="formas de pagamento aceitas: visa, mastercard, boleto bancário, hipercard, american express, elo, diners club, pix" class="img-fluid image-card">
+          </div>
+  
+          <div class="col-md-12 col-lg-3 mt-3">
+            <!-- title -->
+            <h5 class="mb-2 fw-bold color-primary">
+              Selos de segurança
+            </h5>
+            <!-- image -->
+            <img src="assets/image/card/selos-color-fundoclaro-680x400-1.png" alt="selo de segurança, site seguro para compra" width="250rem">
+          </div>
+       
+          <div class="col-12 mt-2 border-top">
+            <p class="text-center pt-3">
+              Copyright - 2023 Mundo Pet - Todos os direitos reservados |   Desenvolvido por <a href="about-me.html" class="link-dark link-offset-2 link-underline link-underline-opacity-0">Thais Lira</a>
+            </p>
+          </div>
+  
         </div>
-
       </div>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
-
-  </script>
+    </footer>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+  
+    </script>
 </body>
 </html>
