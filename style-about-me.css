@@ -1,50 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-/*bg*/
+
+
+/*text*/   
+.font-size{
+  font-size: 1em;
+} 
+
+.color-link-variety, .color-text-variety{
+  color: #EF4D6B;
+}
+
+.hardskills--title{
+  color: white;
+  text-shadow: 3px 3px 5px black;
+  font-weight: bold;  
+}
+  
+.font-text-variety{
+  font-family: 'Satisfy', cursive;
+}
+
+
+@media screen and (min-width:77.5rem) {
+.font-size{
+  font-size: 1.5em;
+}
+
+.text-width{
+  width: 40%;
+}
+}
+
+/*background*/
+.header, .footer{
+  background-color: #404040;
+}
+
+.section-hard-skills{
+  background: url('assets/image/about-me/tecladowebp')no-repeat center/cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+@media screen and (min-width:77.5rem) {
+  .section-hard-skills{
+    height: 50vh;
+  }
+}
+
 .bg-main{
-  background-color: #efecf0;
-  }
+  background-color: #d6d4d6;
+}
   
-  .bg-color-variety{
-    background-color: #ef4d6b7e;
-  }
+.bg-color-variety{
+  background-color: #343434f3;
+  box-shadow: 3px 3px 8px black;
+}
 
-  /*text*/
-  .color-link-variety, .color-text-variety{
-    color: #EF4D6B;
-  }
+/*Card*/
+.card-content{
+  height: 26rem;
+}
 
+/*button*/
+.button{
+  background-color: transparent;
+  border: 1px solid #EF4D6B;
+  color: #EF4D6B;
+  transition: 0.5s;
+}
+
+.button:hover{
+  background-color:#EF4D6B;
+  color: #fff;
+}
   
-  .font-text-variety{
-    font-family: 'Satisfy', cursive;
-  }
+/* Image */ 
+.img-card{
+  width: 100%;
+  max-height: 15rem;
+}
 
-  /*Card*/
-  .card-content{
-    height: 26rem;
-  }
-
-
-  /*button*/
-  .button{
-    background-color: transparent;
-    border: 1px solid #EF4D6B;
-    color: #EF4D6B;
-    transition: 0.5s;
-  }
-
-  .button:hover{
-    background-color:#EF4D6B;
-    color: #fff;
-  }
-  
-  /* Image */ 
-  .img-card{
-    width: 100%;
-    max-height: 15rem;
-  }
-
-  .img-profile{
-    width: 27rem;
-  }
-
- 
+.img-profile{
+  width: 27rem;
+}
