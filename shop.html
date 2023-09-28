@@ -99,9 +99,9 @@
               <!-- title -->
               <p class="lh-1 pt-3">
                 <span class="fw-bold ">
-                  <a href="#" class="link-offset-2 link-underline link-underline-opacity-0 link-color link-header">Acesse sua conta</a>
+                  <a href="register.html" class="link-offset-2 link-underline link-underline-opacity-0 link-color link-header">Acesse sua conta</a>
                    <br>
-                  <span class="fw-lighter">ou <a href="#" class="link-offset-2 link-underline link-underline-opacity-0 link-color link-header">cadastre-se</a> </span>
+                  <span class="fw-lighter">ou <a href="register.html" class="link-offset-2 link-underline link-underline-opacity-0 link-color link-header">cadastre-se</a> </span>
                 </span>
               </p>
             </button>
@@ -120,22 +120,53 @@
           </form>  
 
           <!-- online shopping content-->
-          <form class="d-flex ">
-            <button class="btn-header d-flex justify-content-center align-items-center gap-3 color-primary" type="submit">
-              <!--icon in svg-->
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-              </svg>
-              <!-- title -->
-              <span class="badge bg-color text-white ms-1 rounded-pill">0</span>
+          <button class="navbar-toggler btn-header gap-3 color-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <!--icon in svg-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </svg>
+
+            <span class="badge bg-color text-white ms-1 rounded-pill">0</span>
             </button>
-          </form>   
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                  Carrinho
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>    
+              <div class="offcanvas-body"> 
+                <table class="cart-table">
+                  <thead>
+                    <tr>
+                      <th class="table-head-item first-col">Item</th>
+                      <th class="table-head-item second-col">Preço</th>
+                      <th class="table-head-item third-col">Quantidade</th>
+                    </tr>
+                  </thead>
+        
+                  <tbody>
+
+                  </tbody>
+        
+                  <tfoot>
+                    <tr>
+                      <td colspan="3" class="cart-total-container">
+                        <strong>Total</strong>
+                        <span>R$0,00</span>
+                      </td>
+                    </tr>
+                  </tfoot>
+                </table>
+        
+                <button type="button" class="purchase-button btn btn-primary">Finalizar Compra</button> 
+
+              </div>
+            </div>
           </div>
-        </div>
-    
+        </div>    
       </div>
     </div>
-
     <nav class="navbar navbar-expand-lg navbar-dark static-top bg-header pe-5">
       <!-- Content here -->
       <div class="container">
@@ -205,11 +236,8 @@
      <!--Image in CSS
     Imagem de <a href="https://br.freepik.com/fotos-gratis/conceito-de-natureza-morta-de-acessorios-para-animais-de-estimacao-com-coleira-e-brinquedos-coloridos_13816993.htm#query=petshop&position=20&from_view=search&track=sph">Freepik</a>-->
     </section>
-    <!--End banner top-->
     
-
-    
-    <section class="section-shop" id="section-shop">
+    <section class="" id="section-shop">
       <div class="container-fluid">
         <div class="row text-center border-bottom align-items-center justify-content-around  bg-light p-2">
 
@@ -263,6 +291,7 @@
           <div class="col-6 mb-3 mb-lg-5"> 
             <div class="card h-100">
               <!-- Product image-->
+              <a href="product_1.html">
               <div id="carousel-product-01" class="carousel slide">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -275,6 +304,7 @@
                     <img src="assets/image/shop/image_3.png" class="d-block w-100" alt="">
                   </div>
                 </div>
+              </a>
                 <button class="carousel-control-prev " type="button" data-bs-target="#carousel-product-01" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
@@ -304,7 +334,6 @@
                 <div class="card-footer p-1 p-lg-4 pt-0 border-top-0 bg-transparent">
                   <div class="text-center ">
                     <a class="btn mb-3 w-100 btn-full" href="#">Comprar</a>
-                    <a class="btn w-100 btn-outiline" href="#">Adicionar ao carrinho</a>
                   </div>
                 </div>
             </div>
@@ -314,6 +343,7 @@
           <div class="col-6 mb-3 mb-lg-5"> 
             <div class="card h-100">
               <!-- Product image-->
+              <a href="product_2.html">
               <div id="carousel-product-02" class="carousel slide">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -326,6 +356,7 @@
                     <img src="assets/image/shop/image_6.png" class="d-block w-100" alt="">
                   </div>
                 </div>
+              </a>
                 <button class="carousel-control-prev " type="button" data-bs-target="#carousel-product-02" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
@@ -355,7 +386,6 @@
                 <div class="card-footer p-1 p-lg-4 pt-0 border-top-0 bg-transparent">
                   <div class="text-center ">
                     <a class="btn mb-3 w-100 btn-full" href="#">Comprar</a>
-                    <a class="btn w-100 btn-outiline" href="#">Adicionar ao carrinho</a>
                   </div>
                 </div>
             </div>
@@ -365,6 +395,7 @@
           <div class="col-6 mb-3 mb-lg-5"> 
           <div class="card h-100">
             <!-- Product image-->
+            <a href="product_3.html">
             <div id="carousel-product-03" class="carousel slide">
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -377,6 +408,7 @@
                   <img src="assets/image/shop/image_9.png" class="d-block w-100" alt="">
                 </div>
               </div>
+            </a>
               <button class="carousel-control-prev " type="button" data-bs-target="#carousel-product-03" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -406,7 +438,6 @@
               <div class="card-footer p-1 p-lg-4 pt-0 border-top-0 bg-transparent">
                 <div class="text-center ">
                   <a class="btn mb-3 w-100 btn-full" href="#">Comprar</a>
-                  <a class="btn w-100 btn-outiline" href="#">Adicionar ao carrinho</a>
                 </div>
               </div>
           </div>
@@ -416,6 +447,7 @@
           <div class="col-6 mb-3 mb-lg-5"> 
           <div class="card h-100">
           <!-- Product image-->
+          <a href="product_4.html">
           <div id="carousel-product-04" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -428,6 +460,7 @@
                 <img src="assets/image/shop/image_12.png" class="d-block w-100" alt="">
               </div>
             </div>
+          </a>
             <button class="carousel-control-prev " type="button" data-bs-target="#carousel-product-04" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
@@ -457,7 +490,6 @@
             <div class="card-footer p-1 p-lg-4 pt-0 border-top-0 bg-transparent">
               <div class="text-center ">
                 <a class="btn mb-3 w-100 btn-full" href="#">Comprar</a>
-                <a class="btn w-100 btn-outiline" href="#">Adicionar ao carrinho</a>
               </div>
             </div>
           </div>
@@ -468,6 +500,7 @@
           <div class="col-6 mb-3 mb-lg-5"> 
             <div class="card h-100">
               <!-- Product image-->
+              <a href="product_5.html">
               <div id="carousel-product-05" class="carousel slide">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -480,6 +513,7 @@
                     <img src="assets/image/shop/image_15.png" class="d-block w-100" alt="">
                   </div>
                 </div>
+              </a>
                 <button class="carousel-control-prev " type="button" data-bs-target="#carousel-product-05" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
@@ -509,7 +543,6 @@
                 <div class="card-footer p-1 p-lg-4 pt-0 border-top-0 bg-transparent">
                   <div class="text-center ">
                     <a class="btn mb-3 w-100 btn-full" href="#">Comprar</a>
-                    <a class="btn w-100 btn-outiline" href="#">Adicionar ao carrinho</a>
                   </div>
                 </div>
             </div>
@@ -519,6 +552,7 @@
           <div class="col-6 mb-3 mb-lg-5"> 
             <div class="card h-100">
               <!-- Product image-->
+              <a href="product_6.html">
               <div id="carousel-product-06" class="carousel slide">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -531,6 +565,7 @@
                     <img src="assets/image/shop/image_18.png" class="d-block w-100" alt="">
                   </div>
                 </div>
+              </a>
                 <button class="carousel-control-prev " type="button" data-bs-target="#carousel-product-06" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
@@ -560,7 +595,6 @@
                 <div class="card-footer p-1 p-lg-4 pt-0 border-top-0 bg-transparent">
                   <div class="text-center ">
                     <a class="btn mb-3 w-100 btn-full" href="#">Comprar</a>
-                    <a class="btn w-100 btn-outiline" href="#">Adicionar ao carrinho</a>
                   </div>
                 </div>
             </div>
@@ -570,6 +604,7 @@
           <div class="col-6 mb-3 mb-lg-5"> 
             <div class="card h-100">
               <!-- Product image-->
+              <a href="product_7.html">
               <div id="carousel-product-07" class="carousel slide">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -582,6 +617,7 @@
                     <img src="assets/image/shop/image_21.png" class="d-block w-100" alt="">
                   </div>
                 </div>
+              </a>
                 <button class="carousel-control-prev " type="button" data-bs-target="#carousel-product-07" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
@@ -611,7 +647,6 @@
                 <div class="card-footer p-1 p-lg-4 pt-0 border-top-0 bg-transparent">
                   <div class="text-center ">
                     <a class="btn mb-3 w-100 btn-full" href="#">Comprar</a>
-                    <a class="btn w-100 btn-outiline" href="#">Adicionar ao carrinho</a>
                   </div>
                 </div>
             </div>
@@ -621,6 +656,7 @@
           <div class="col-6 mb-3 mb-lg-5"> 
             <div class="card h-100">
               <!-- Product image-->
+              <a href="product_8.html">
               <div id="carousel-product-08" class="carousel slide">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -633,6 +669,7 @@
                     <img src="assets/image/shop/image_24.png" class="d-block w-100" alt="">
                   </div>
                 </div>
+              </a>
                 <button class="carousel-control-prev " type="button" data-bs-target="#carousel-product-08" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
@@ -662,7 +699,6 @@
                 <div class="card-footer p-1 p-lg-4 pt-0 border-top-0 bg-transparent">
                   <div class="text-center ">
                     <a class="btn mb-3 w-100 btn-full" href="#">Comprar</a>
-                    <a class="btn w-100 btn-outiline" href="#">Adicionar ao carrinho</a>
                   </div>
                 </div>
             </div>
@@ -672,6 +708,7 @@
           <div class="col-6 mb-3 mb-lg-5"> 
             <div class="card h-100">
               <!-- Product image-->
+              <a href="product_9.html">
               <div id="carousel-product-09" class="carousel slide">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -680,8 +717,8 @@
                   <div class="carousel-item">
                     <img src="assets/image/shop/image_26.png" class="d-block w-100" alt="">
                   </div>
-
                 </div>
+              </a>
                 <button class="carousel-control-prev " type="button" data-bs-target="#carousel-product-09" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
@@ -711,7 +748,6 @@
                 <div class="card-footer p-1 p-lg-4 pt-0 border-top-0 bg-transparent">
                   <div class="text-center ">
                     <a class="btn mb-3 w-100 btn-full" href="#">Comprar</a>
-                    <a class="btn w-100 btn-outiline" href="#">Adicionar ao carrinho</a>
                   </div>
                 </div>
             </div>
@@ -721,6 +757,7 @@
           <div class="col-6 mb-3 mb-lg-5"> 
             <div class="card h-100">
               <!-- Product image-->
+              <a href="product_10.html">
               <div id="carousel-product-10" class="carousel slide">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -732,7 +769,7 @@
                   <div class="carousel-item">
                     <img src="assets/image/shop/image_29.png" class="d-block w-100" alt="">
                   </div>
-
+                </a>
                 </div>
                 <button class="carousel-control-prev " type="button" data-bs-target="#carousel-product-10" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -763,7 +800,6 @@
                 <div class="card-footer p-1 p-lg-4 pt-0 border-top-0 bg-transparent">
                   <div class="text-center ">
                     <a class="btn mb-3 w-100 btn-full" href="#">Comprar</a>
-                    <a class="btn w-100 btn-outiline" href="#">Adicionar ao carrinho</a>
                   </div>
                 </div>
             </div>
@@ -773,6 +809,7 @@
           <div class="col-6 mb-3 mb-lg-5"> 
             <div class="card h-100">
               <!-- Product image-->
+              <a href="product_11.html">
               <div id="carousel-product-11" class="carousel slide">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -784,8 +821,8 @@
                   <div class="carousel-item">
                     <img src="assets/image/shop/image_32.png" class="d-block w-100" alt="">
                   </div>
-
                 </div>
+              </a>
                 <button class="carousel-control-prev " type="button" data-bs-target="#carousel-product-11" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
@@ -815,7 +852,6 @@
                 <div class="card-footer p-1 p-lg-4 pt-0 border-top-0 bg-transparent">
                   <div class="text-center ">
                     <a class="btn mb-3 w-100 btn-full" href="#">Comprar</a>
-                    <a class="btn w-100 btn-outiline" href="#">Adicionar ao carrinho</a>
                   </div>
                 </div>
             </div>
@@ -825,6 +861,7 @@
           <div class="col-6 mb-3 mb-lg-5"> 
             <div class="card h-100">
               <!-- Product image-->
+              <a href="product_12.html">
               <div id="carousel-product-12" class="carousel slide">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -836,8 +873,8 @@
                   <div class="carousel-item">
                     <img src="assets/image/shop/image_35.png" class="d-block w-100" alt="">
                   </div>
-
                 </div>
+              </a>
                 <button class="carousel-control-prev " type="button" data-bs-target="#carousel-product-12" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
@@ -866,8 +903,7 @@
               <!-- Product actions-->
                 <div class="card-footer p-1 p-lg-4 pt-0 border-top-0 bg-transparent">
                   <div class="text-center ">
-                    <a class="btn mb-3 w-100 btn-full" href="#">Comprar</a>
-                    <a class="btn w-100 btn-outiline" href="#">Adicionar ao carrinho</a>
+                    <a class="btn mb-3 w-100 btn-full " href="#">Comprar</a>
                   </div>
                 </div>
             </div>
@@ -979,7 +1015,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
-
   </script>
+  <script src="script.js"></script>
 </body>
 </html>

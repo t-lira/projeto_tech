@@ -151,3 +151,37 @@ transition: 0.5s;
 .carousel-control-prev {
   filter: invert(100%);
 }
+
+
+/* tabela carrinho de compras */
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-head-item {
+  text-align: start;
+  border-bottom: 1px solid gray;
+  padding-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.second-col,
+.third-col {
+  width: 26%;
+}
+
+.cart-product td {
+  padding: 8px 0;
+}
+
+.cart-total-container {
+  border-top: 1px solid gray;
+  text-align: end;
+  padding: 6px 16px 0 0;
+  font-size: 18px;
+}
+
+.cart-total-container strong {
+  margin-right: 12px;
+}
