@@ -4,84 +4,71 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content=""><!--DESCREVER LOJA-->
+  <meta name="description" content="Petshop Mundo Pet">
   <meta name="robots" content="index,follow">
-  <link rel="shortcut icon" href="assets/image/icons/favicon_.png" type="image/x-icon"><!--ADICIONAR IMAGEM-->
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="assets/image/icons/favicon_.png" type="image/x-icon">
   <title>Mundo Pet</title>
+  <!-- Core theme CSS (includes Bootstrap)-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="reset.css">
 </head>
-
 <body>    
   <!--Start header-->    
   <header class="header bg-color">
-    <!-- Content here -->
+    <!-- Header content -->
     <div class="container-fluid">
-      <div class=" row bg-light align-items-center p-2 p-lg-4">
 
+      <div class=" row bg-light align-items-center p-2">
         <!-- nav brand link -->
         <div class="col-12 col-lg-2 d-flex justify-content-center align-items-center">
           <a class="navbar-brand" href="index.html">
-            <img src="assets/image/icons/logo_icon.png" alt="logo" height="50">
+            <img src="assets/image/icons/logo_icon.png" alt="logo" height="60">
           </a>
         </div>
 
-        <!-- box icon --  d-none large screens-->
+        <!-- Start box icon --  d-none large screens-->
         <div class="col-12 pt-2 col-lg-4 d-lg-none">
           <div class="d-flex justify-content-center align-items-center">
             <!-- registration content-->
-
-            <form class="d-flex ">
-                        
-              <button class="btn d-flex justify-content-center align-items-center color-primary" type="submit"> 
-                <a href="register.html">
-                  <!--icon in svg-->
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-                  </svg>
-                </a> 
-                <!-- title -->
-                <p class="lh-1 pt-3 d-none">
-                  <span class="fw-bold ">Acesse sua conta <br>
-                    <span class="fw-lighter">ou cadastre-se</span>
-                  </span>
-                </p> 
-              </button>  
-              </form>
-          
-            <!-- location content-->
-   
-            <form class="d-flex">
-              <button class="btn d-flex justify-content-center align-items-center color-primary" type="submit">
+            <form class="d-flex ">                       
+              <button class="btn-header d-flex justify-content-center align-items-center gap-3 color-primary me-3" type="submit">
                 <!--icon in svg-->
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
                 </svg>
-                <!-- title -->
-                <span class="d-none">Informe seu CEP</span>
+                <!-- Link -->
+                <p class="lh-1 pt-3 ">
+                  <span class="fw-bold ">
+                    <a href="register.html" class="link-offset-2 link-underline link-underline-opacity-0 link-color link-header">Entrar</a>
+                    <br>
+                    <span class="fw-lighter">
+                      <a href="register.html" class="link-offset-2 link-underline link-underline-opacity-0 link-color link-header">Cadastrar</a> 
+                    </span>
+                  </span>
+                </p>
               </button>
-            </form>  
-  
+              </form>
             <!-- online shopping content-->
             <form class="d-flex">
               <button class="btn d-flex justify-content-center align-items-center gap-1 color-primary " type="submit">
                 <!--icon in svg-->
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart " viewBox="0 0 16 16">
-                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
                 </svg>
                 <!-- title -->
-                <span class="badge bg-color text-white ms-1 rounded-pill">0</span>
+                <span class="badge bg-color text-white ms-1 rounded-pill p-2">0</span>
               </button>
             </form>   
           </div>
-
         </div>
+        <!-- End box icon --  d-none large screens-->
 
         <!-- search form -->
-        <div class="col-12 col-lg-3 mt-2 mt-lg-0">
+        <div class="col-12 col-lg-3 mt-1 mt-lg-0 ms-lg-4">
           <form class="d-flex" role="search" >
-            <input class="form-control me-2 float-end rounded-pill" type="search" placeholder="O que você está procurando" aria-label="Search">
+            <input class="form-control me-2 float-end rounded-pill " type="search" placeholder="O que você está procurando" aria-label="Search">
             <button class="btn  btn-icon-search rounded-pill" type="submit">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search color-primary" viewBox="0 0 16 16">
               <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
@@ -90,48 +77,36 @@
           </form>       
         </div>
 
-        <!--  box icon -- d-block large screens -->
-        <div class="col-7 d-none d-lg-block ">
-          <div class="d-flex justify-content-end gap-3">
-
+        <!-- Start  box icon -- d-block large screens -->
+        <div class="col-12 col-lg-6 d-none d-lg-block">
+          <div class="d-flex justify-content-end">
           <!-- registration content-->
-          <form class="d-flex ">
-            <button class="btn-header d-flex justify-content-center align-items-center gap-3 color-primary" type="submit">
-              <!--icon in svg-->
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-              <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-              </svg>
-              <!-- title -->
-              <p class="lh-1 pt-3">
-                <span class="fw-bold ">
-                  <a href="register.html" class="link-offset-2 link-underline link-underline-opacity-0 link-color link-header">Acesse sua conta</a>
-                   <br>
-                  <span class="fw-lighter">ou <a href="register.html" class="link-offset-2 link-underline link-underline-opacity-0 link-color link-header">cadastre-se</a> </span>
-                </span>
-              </p>
-            </button>
-
-          <!-- location content-->
-          </form>     
-          <form class="d-flex">
-            <button class="btn-header d-flex justify-content-center align-items-center gap-3 color-primary" type="submit">
-              <!--icon in svg-->
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-              </svg>
-              <!-- title -->
-              <span class="link-header">Informe seu CEP</span>
-            </button>
-          </form>  
-
+            <form class="d-flex justify-content-center align-items-center">                       
+              <button class="btn-header d-flex justify-content-center align-items-center gap-3 color-primary me-3" type="submit">
+                <!--icon in svg-->
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                </svg>
+                <!-- Link -->
+                <p class="lh-1 pt-3 ">
+                  <span class="fw-bold ">
+                    <a href="register.html" class="link-offset-2 link-underline link-underline-opacity-0 link-color link-header">Entrar</a>
+                    <br>
+                    <span class="fw-lighter">
+                      <a href="register.html" class="link-offset-2 link-underline link-underline-opacity-0 link-color link-header">Cadastrar</a> 
+                    </span>
+                  </span>
+                </p>
+              </button>
+            </form>
           <!-- online shopping content-->
-          <button class="navbar-toggler btn-header gap-3 color-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <button class="navbar-toggler btn-header gap-3 color-primary ms-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
             <!--icon in svg-->
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
             </svg>
 
-            <span class="badge bg-color text-white ms-1 rounded-pill">0</span>
+            <span class="badge bg-color text-white ms-1 rounded-pill p-2">0</span>
             </button>
             <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
               <div class="offcanvas-header">
@@ -170,8 +145,10 @@
             </div>
           </div>
         </div>    
+
       </div>
     </div>
+    <!--Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark static-top bg-header pe-5">
       <!-- Content here -->
       <div class="container">
@@ -189,12 +166,12 @@
             </li>
             <li class="nav-item">
               <a class="nav-link fs-5 link-light" href="about.html">
-                Quem Somos
+                Sobre
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link  fs-5 link-light" href="services.html">
-                Serviços
+              <a class="nav-link  fs-5 link-light" href="shop.html">
+                Produtos
               </a>
             </li>
             <!-- dropdown menu -->
@@ -214,7 +191,7 @@
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="contact.html">
+                  <a class="dropdown-item" href="contact.html#location-map">
                     Localização
                   </a>
                 </li>
@@ -235,39 +212,45 @@
     </div>  
   </header>
 
-<!--Start Main-->
+  <!--
+    Start Main
+  -->
   <main class="main bg-color-main">
-    <!--Start section form contact-->
-    <section class="contact-form  pt-4 pb-4 ">
+    <!--
+      section form contact
+    -->
+    <section class="contact-form  pt-5 mb-4">
       <div class="container-fluid">
-        <div class="row">            
-          <h3 class="mb-3  text-color">
-            Formulário de Contato
-          </h3> 
+        <div class="col-12">
+          <!--section title-->
+          <h1 class="text-color mb-4">
+            Contato 
+          </h1>
+        </div>
 
+        <div class="row">    
           <div class="col-12 col-lg-6">
             <form action="" method="post" class="form-color">
-
               <div class="mb-3">
-                <label for="" class="form-label">Nome:</label>
-                <input type="text" placeholder="Nome*" class="form-control input-color" name="fist-name" id="fist-name" required>
+                <label for="" class="form-label">Nome</label>
+                <input type="text" placeholder="Nome Completo" class="form-control input-color" name="fist-name" id="fist-name" required>
               </div>
 
-              <div class="row mb-3">
-                <div class="col">
-                  <label for="email-contact" class="form-label">E-mail:</label>
-                  <input type="email" placeholder="E-mail*" class="form-control input-color" name="email-contact" id="email-contact" required> 
+
+                <div class="col mb-3">
+                  <label for="email-contact" class="form-label">E-mail</label>
+                  <input type="email" placeholder="E-mail" class="form-control input-color" name="email-contact" id="email-contact" required> 
                 </div>
   
-                <div class="col">
-                  <label for="telephone-contact" class="form-label">Telefone:</label>
-                  <input type="number" placeholder="Telefone com DDD*" class="form-control input-color" name="telephone-contact" id="telephone-contact" required>
+                <div class="col mb-3">
+                  <label for="telephone-contact" class="form-label">Telefone</label>
+                  <input type="number" placeholder="DDD + telefone" class="form-control input-color" name="telephone-contact" id="telephone-contact" required>
                 </div>
-              </div>
+
               <div class="row mb-3">
                 <div class="col">
-                  <label for="city" class="form-label">Estado:</label>
-                  <input class="form-control input-color" list="datalistOptions" name="city" id="city" placeholder="Estado*">
+                  <label for="city" class="form-label">Estado</label>
+                  <input class="form-control input-color" list="datalistOptions" name="city" id="city" placeholder="Estado">
                   <datalist id="datalistOptions">
                     <option value="Acre" id="">
                     <option value="Alagoas" id="">
@@ -300,84 +283,70 @@
                 </div>
   
                 <div class="col">
-                  <label for="cep" class="form-label ">CEP:</label>
-                  <input type="text" placeholder="CEP*" class="form-control input-color" name="cep" id="cep" required>
+                  <label for="cep" class="form-label ">CEP</label>
+                  <input type="text" placeholder="CEP" class="form-control input-color" name="cep" id="cep" required>
                 </div>
               </div>
 
               <div class="mb-3">
-                <label for="message" class="form-label">Mensagem:</label>
+                <label for="message" class="form-label">Mensagem</label>
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="O que você precisa?" class="form-control input-color" required></textarea>
               </div>
 
-                <button type="submit" value="submit" class="btn btn-primary btn-lg px-5 mt-3 " id="" onclick="formcontact()">Enviar</button>
-         
+                <button type="submit" value="submit" class="btn btn-success btn-lg px-5 mt-3 " id="">Enviar</button>
             </form>
           </div>
 
-          <div class="col-12 col-lg-6 mt-5">
-
-            <p class="">
-              Abaixo listamos as formas de contato disponíveis em nossa loja.           
-            </p>
-  
-            <h4>
-              Central de Atendimento ao Cliente
+          <div class="col-12 col-lg-6 mt-5 ">
+            <h3 class="mb-3">
+              Entre em contato conosco
+            </h3>
+            <h4 class="mb-3">
+              Tem alguma dúvida?
             </h4>
-            <p>
-              (11) 0000-0000
-            </p>
-  
-            <h4>
-              Horário de Atendimento
+            <h4 class="lh-base">
+              Contate o Serviço de Atendimento ao Consumidor (SAC) pelo telefone 0800 000 1000, de segunda à sexta-feira, das 7h às 17h, envie uma mensagem através do e-mail sacmundopet@informação.com ou preencha o formulário.
             </h4>
-            <p>
-              Atendimento de Segunda a Sexta das 9:00 as 12:00 e das 14:00 as 18:00.
-            </p>
-  
-            <h4>
-              E-mail
-            </h4>
-            <p>
-              Entre em contato conosco através do e-mail MundoPet@gmail.com
-            </p>
-
           </div>
+
+        </div>
+      </div>
+     </section>
+
+    <!--
+      section location
+    -->
+
+    <section id="location-map">
+      <div class="container-fluid">
+        <div class="row">
+          <h1 class="text-color mt-5 mb-3">
+            Localização 
+          </h1>
+          <div class="col-lg-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.673919910333!2d-46.44197722556104!3d-23.50825177883635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce63e2acc5d075%3A0xfc6f64d3508407b3!2sAv.%20Nordestina%2C%201756%20-%20Cidade%20Nova%20S%C3%A3o%20Miguel%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1694711525773!5m2!1spt-BR!2sbr" allowfullscreen="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="iframe-location"></iframe>               
         </div>
       </div>
     </section>
-    <!--Start section location-->
-    <section id="location ">
-      <div class="container-fluid mt-lg-3">
-        <div class="row align-items-end">
-          <div class="col-lg-6">
-            <h3 class="text-color mb-3"> 
-              Nosso Endereço                
-            </h3>               
-            <p class="">              
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>               
-              Av. Nordestina, 0000 - Cidade Nova São Miguel, São Paulo - SP, 08042-000 
-            </p> 
 
-            <h5 class="fw-bold mb-3">             
-              Compre sem sair de casa pelo Whatsapp!  
-            </h5> 
-
-            <button class="btn btn-success btn-lg mb-2">              
-              <a href="http://www.whatsappweb.com/" class="link-light link-offset-2 link-underline link-underline-opacity-0" target="_blank">                 
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.2"/>32z</svg>                 
-              Whatsapp</a>               
-            </button>              
-            <img src="assets/image/png-image-pets.png" alt="" class="img-fluid">
-          </div>
-
-          <div class="col-lg-6 mt-3">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.673919910333!2d-46.44197722556104!3d-23.50825177883635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce63e2acc5d075%3A0xfc6f64d3508407b3!2sAv.%20Nordestina%2C%201756%20-%20Cidade%20Nova%20S%C3%A3o%20Miguel%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1694711525773!5m2!1spt-BR!2sbr" allowfullscreen="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="iframe-location"></iframe> 
-          </div>                 
+    <!--
+       content
+    -->
+    <div class="container pt-5 pb-5">
+      <div class="row">
+        <!--content-->
+        <div class="col-lg-6 ">
+          <img src="assets/image/icons/logo_icon.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-lg-6 mt-3 mt-lg-0">
+          <p>
+            Buscamos inovação e praticidade para contribuir com a sua rotina, garantindo o abastecimento de itens necessários e os cuidados para o seu pet, com total comodidade, entrega rápida e protegida.
+          </p>
+          <!-- navigation link -->
+          <a href="about.html" class="btn button btn-lg">Conheça o Mundo Pet</a>
         </div>
       </div>
-    </section>
-    <!--End section location-->
+    </div>
 
     <!--Start section-resister-->
     <section class="section-resister bg-color " id="">
@@ -402,24 +371,33 @@
                 </div>
 
                 <div class="col-12 col-lg-4">
-                  <input type="submit" value="Cadastrar" class="btn btn-outline-light btn-lg" onclick="send_registration()">
+                  <input type="submit" value="Cadastrar" class="btn btn-outline-light btn-lg">
                 </div>
               </div>
             </form>
           </div>
-    
         </div>
       </div>
     </section>
-
   </main>
-
-  <!--Start Footer-->
+ <!--
+    -- Footer --
+  -->
   <footer class="footer pt-3 pt-1 bg-light">
     <div class="container-fluid">
       <div class="row align-items-start">
 
-        <div class="col-md-4 col-lg-3 mt-2">
+        <div class="col-12">
+          <button class="btn btn-dark btn-lg float-end"  title="Topo" id="goToTopButton">
+            <a href="" class="link-light" >
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+              </svg>
+            </a>
+          </button>
+        </div>
+
+        <div class="col-md-12 col-lg-3 mt-2">
           <!--image-->
           <img src="assets/image/icons/logo_icon.png" alt="" class="img-fluid">
           <!--text-->
@@ -434,7 +412,7 @@
             Institucional
           </h5>
           <!-- navigation bar -->
-          <nav class="navbar">
+          <nav class="navbar ">
             <ul class="nav flex-column">
               <li class="nav-item">
                 <a href="contact.html" class="link-nav-footer">
@@ -447,7 +425,7 @@
                 </a>                
               </li>
               <li class="nav-item">
-                <a href="services.html" class="link-nav-footer">
+                <a href="about.html" class="link-nav-footer">
                   Serviços
                 </a>
               </li>
@@ -464,7 +442,7 @@
           <img src="assets/image/card/cartoes_aceitos.png" alt="formas de pagamento aceitas: visa, mastercard, boleto bancário, hipercard, american express, elo, diners club, pix" class="img-fluid image-card">
         </div>
 
-        <div class="col-md-12 col-lg-3 mt-3">
+        <div class="col-md-4 col-lg-3 mt-3">
           <!-- title -->
           <h5 class="mb-2 fw-bold color-primary">
             Selos de segurança
@@ -475,15 +453,18 @@
      
         <div class="col-12 mt-2 border-top">
           <p class="text-center pt-3">
-            Copyright - 2023 Mundo Pet - Todos os direitos reservados |   Desenvolvido por <a href="about-me.html" class="link-dark link-offset-2 link-underline link-underline-opacity-0">Thais Lira</a>
+            Copyright - 2023 Mundo Pet - Todos os direitos reservados |   Desenvolvido por <a href="about-me.html" class="link-dark link-offset-2 link-underline link-underline-opacity-0" target="_blank">Thais Lira</a>
           </p>
         </div>
 
       </div>
     </div>
   </footer>
+  <!--
+    Link JavaScript
+  -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
-
   </script>
+  <script src="script.js"></script>
 </body>
 </html>

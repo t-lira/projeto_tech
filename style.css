@@ -6,14 +6,14 @@
 }
 
 /*banners*/
-.banner-top{
-  background: url('assets/image/objetos-coloridos.jpg')no-repeat bottom/cover;
-  height: 50vh;
+.img-banner-mobile{
+  background: url("assets/image/banner_mobile.png") no-repeat center/cover;
+  width: 100vw;
+  height: 80vh;
 }
 
-.banner-top-form{
-  background: url('assets/image/brinquedos-coloridos.jpg')no-repeat center/cover;
-  height: 50vh;
+.img-banner-form{
+width: 20rem;
 }
 
 /*text color */
@@ -30,18 +30,56 @@
   font-family: 'Niconne', cursive;
 }
 
-@media screen and (max-width:20rem) {
-  .small-letter{ font-size: 1rem;
-}
+.line{
+  width: 10rem;
+  height: 0.1rem;
+  border: 1px solid #6390C7;
 }
 
-/*bg color */
+.title-card{
+  font-size: 1rem;
+}
+
+@media screen and (min-width:77.5rem) {
+  .title-card{
+    font-size: 1.3rem;
+  }
+}
+
+.section-banner-contact{
+  background: linear-gradient(176deg, rgba(191,185,245,1) 0%, rgba(172,114,233,1) 100%);
+  color: #fff;
+}
+
 .bg-color{
   background-color: #6C65B9;
+ 
 }
 
 .bg-color-main{
   background-color: #f5f5f5;
+}
+
+.footer-bg{
+  background-color: #EEEEEE;
+}
+
+.icon{
+  transition: 0.5s;
+  padding: 1rem;
+  box-shadow: 1px 1px 8px #07070767;
+  background-color: #7873b925;
+  color: #7873b9;
+}
+
+.icon:hover{
+background-color: #413b80;
+color: #F8F9FA;
+}
+
+.text{
+  margin-top: 1rem; 
+  font-size: 1.1em;
 }
 
 /*buttons*/
@@ -61,6 +99,12 @@ transition: 0.5s;
   transition: 0.5s;
   color: #6C65B9;
   font-weight: bold;
+}
+
+@media screen and (min-width:48rem) {
+  .button-more{
+    width: 50%;
+  }
 }
 
 @media screen and (min-width:77.5rem) {
@@ -151,3 +195,15 @@ transition: 0.5s;
 .cart-total-container strong {
   margin-right: 12px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
