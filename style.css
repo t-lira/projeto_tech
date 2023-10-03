@@ -10,6 +10,21 @@
 /*
 --banners--
 */
+
+.banner-top-shop{
+  background: url("assets/image/banner-mobile-01.png") no-repeat bottom /cover;
+  height: 80vh;
+}
+
+@media screen and (min-width:77.5rem) {
+  .banner-top-shop{
+    background: url("assets/image/banner_05.png") no-repeat top/cover;
+    height: 60vh;
+  }
+}
+
+
+
 .img-banner-mobile{
   background: url("assets/image/banner_mobile.png") no-repeat center/cover;
   width: 100vw;
@@ -111,6 +126,13 @@ transition: 0.5s;
 .btn-header{
   border: none;
   background-color: #F8F9FA;
+  transition: 0.5s;  
+  border-radius: 0.5rem;
+}
+
+.btn-header:hover{
+  border: none;
+  background-color: #e5e6e7;
 }
 
 /*

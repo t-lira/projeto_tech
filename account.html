@@ -1,73 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Petshop Mundo Pet">
-  <meta name="robots" content="index,follow">
-  <!-- Favicon-->
-  <link rel="shortcut icon" href="assets/image/icons/favicon_.png" type="image/x-icon">
-  <title>Mundo Pet</title>
-  <!-- Core theme CSS (includes Bootstrap)-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="reset.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Petshop Mundo Pet">
+    <meta name="robots" content="index,follow">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="assets/image/icons/pata.png" type="image/x-icon">
+    <title>Petshop - Mundo Pet</title>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+  </head>
 <body>
-  <!--Start header-->    
+  <!--
+    --Start header--
+  -->    
   <header class="header bg-color">
-    <!-- Header content -->
+    <!-- header content -->
     <div class="container-fluid">
-
-      <div class=" row bg-light align-items-center p-2">
-        <!-- nav brand link -->
-        <div class="col-12 col-lg-2 d-flex justify-content-center align-items-center">
+      <div class="row bg-light align-items-center p-2">
+        <!-- 
+          -- logo image section --
+        -->
+        <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center">
           <a class="navbar-brand" href="index.html">
-            <img src="assets/image/icons/logo_icon.png" alt="logo" height="60">
+            <img src="assets/image/icons/logo_icon.png" alt="logo" height="70">
           </a>
-        </div>
-
-        <!-- Start box icon --  d-none large screens-->
-        <div class="col-12 pt-2 col-lg-4 d-lg-none">
-          <div class="d-flex justify-content-center align-items-center">
-            <!-- registration content-->
-            <form class="d-flex ">                       
-              <button class="btn-header d-flex justify-content-center align-items-center gap-3 color-primary me-3" type="submit">
-                <!--icon in svg-->
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
-                </svg>
-                <!-- Link -->
-                <p class="lh-1 pt-3 ">
-                  <span class="fw-bold ">
-                    <a href="register.html" class="link-offset-2 link-underline link-underline-opacity-0 link-color link-header">Entrar</a>
-                    <br>
-                    <span class="fw-lighter">
-                      <a href="register.html" class="link-offset-2 link-underline link-underline-opacity-0 link-color link-header">Cadastrar</a> 
-                    </span>
-                  </span>
-                </p>
-              </button>
-              </form>
-            <!-- online shopping content-->
-            <form class="d-flex">
-              <button class="btn d-flex justify-content-center align-items-center gap-1 color-primary " type="submit">
-                <!--icon in svg-->
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
-                </svg>
-                <!-- title -->
-                <span class="badge bg-color text-white ms-1 rounded-pill p-2">0</span>
-              </button>
-            </form>   
-          </div>
-        </div>
-        <!-- End box icon --  d-none large screens-->
-
-        <!-- search form -->
-        <div class="col-12 col-lg-3 mt-1 mt-lg-0 ms-lg-4">
-          <form class="d-flex" role="search" >
+        </div> 
+        <!-- 
+          -- search form section --
+         -->
+        <div class="col-12 col-lg-4 mt-4 mt-lg-0">
+          <form class="d-flex" role="search">
             <input class="form-control me-2 float-end rounded-pill " type="search" placeholder="O que você está procurando" aria-label="Search">
             <button class="btn  btn-icon-search rounded-pill" type="submit">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search color-primary" viewBox="0 0 16 16">
@@ -76,19 +43,19 @@
           </button>
           </form>       
         </div>
-
-        <!-- Start  box icon -- d-block large screens -->
-        <div class="col-12 col-lg-6 d-none d-lg-block">
-          <div class="d-flex justify-content-end">
-          <!-- registration content-->
-            <form class="d-flex justify-content-center align-items-center">                       
-              <button class="btn-header d-flex justify-content-center align-items-center gap-3 color-primary me-3" type="submit">
+        <!-- 
+          -- registration links section --
+         -->
+        <div class="col-12 pt-2 col-lg-4">
+          <div class="d-flex justify-content-center align-items-center">
+            <form class="d-flex justify-content-center align-items-center">     
+              <button class="btn-header color-primary d-flex justify-content-center align-items-center gap-3  px-2" type="submit">
                 <!--icon in svg-->
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
                   <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
                 </svg>
                 <!-- Link -->
-                <p class="lh-1 pt-3 ">
+                <p class="lh-1 pt-3">
                   <span class="fw-bold ">
                     <a href="register.html" class="link-offset-2 link-underline link-underline-opacity-0 link-color link-header">Entrar</a>
                     <br>
@@ -99,58 +66,58 @@
                 </p>
               </button>
             </form>
-          <!-- online shopping content-->
-          <button class="navbar-toggler btn-header gap-3 color-primary ms-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-            <!--icon in svg-->
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
-            </svg>
+            <!-- 
+              --shopping cart section-- 
+            -->
+            <button class="navbar-toggler btn-header gap-3 color-primary ms-3 p-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+              <!--icon in svg-->
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+              </svg>
+  
+              <span class="badge bg-color text-white ms-1 rounded-pill p-2">0</span>
+              </button>
 
-            <span class="badge bg-color text-white ms-1 rounded-pill p-2">0</span>
-            </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                  Carrinho
-                </h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>    
-              <div class="offcanvas-body"> 
-                <table class="cart-table">
-                  <thead>
-                    <tr>
-                      <th class="table-head-item first-col">Item</th>
-                      <th class="table-head-item second-col">Preço</th>
-                      <th class="table-head-item third-col">Quantidade</th>
-                    </tr>
-                  </thead>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                    Carrinho
+                  </h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>    
+                <div class="offcanvas-body"> 
+                  <table class="cart-table">
+                    <thead>
+                      <tr>
+                        <th class="table-head-item first-col">Item</th>
+                        <th class="table-head-item second-col">Preço</th>
+                        <th class="table-head-item third-col">Quantidade</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
         
-                  <tbody>
-
-                  </tbody>
-        
-                  <tfoot>
-                    <tr>
-                      <td colspan="3" class="cart-total-container">
-                        <strong>Total</strong>
-                        <span>R$0,00</span>
-                      </td>
-                    </tr>
-                  </tfoot>
-                </table>
-        
-                <button type="button" class="purchase-button btn btn-primary">Finalizar Compra</button> 
-
-              </div>
+                    <tfoot>
+                      <tr>
+                        <td colspan="3" class="cart-total-container">
+                          <strong>Total</strong>
+                          <span>R$0,00</span>
+                        </td>
+                      </tr>
+                    </tfoot>
+                  </table>
+          
+                  <button type="button" class="purchase-button btn btn-primary">Finalizar Compra</button> 
             </div>
           </div>
-        </div>    
-
-      </div>
+        </div>
+      </div> 
     </div>
-    <!--Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark static-top bg-header pe-5">
-      <!-- Content here -->
+    <!--
+      Navigation
+    -->
+    <nav class="navbar navbar-expand-lg navbar-dark static-top bg-header">
+      <!-- Navigation content -->
       <div class="container">
         <!--btn toggle navigation -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -160,7 +127,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link  fs-5 link-light" href="index.html">
+              <a class="nav-link  fs-5 link-light " href="index.html">
                 Home
               </a>
             </li>
@@ -207,11 +174,13 @@
               </ul>
             </li>
           </ul> 
-        </nav>     
+        </nav>   
       </div>  
     </div>  
   </header>
-  
+  <!--
+    Start Main
+  -->
   <main class="bg-color-main">
     <section class=" pt-4 p-lg-5">
       <div class="container-fluid">
