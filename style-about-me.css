@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 
-/*text*/   
+/*
+-- texts --
+*/   
 .font-size{
   font-size: 1em;
 } 
@@ -31,13 +33,15 @@
 }
 }
 
-/*background*/
+/*
+-- Background --
+*/
 .header, .footer{
   background-color: #404040;
 }
 
 .section-hard-skills{
-  background: url('assets/image/about-me/tecladowebp')no-repeat center/cover;
+  background: url('assets/image/about-me/tecladowebp.png')no-repeat center/cover;
   background-attachment: fixed;
   height: 100vh;
 }
@@ -57,12 +61,16 @@
   box-shadow: 3px 3px 8px black;
 }
 
-/*Card*/
+/*
+-- Card --
+*/
 .card-content{
   height: 26rem;
 }
 
-/*button*/
+/*
+-- button --
+*/
 .button{
   background-color: transparent;
   border: 1px solid #EF4D6B;
@@ -75,7 +83,9 @@
   color: #fff;
 }
   
-/* Image */ 
+/* 
+--Image--
+ */ 
 .img-card{
   width: 100%;
   max-height: 15rem;
